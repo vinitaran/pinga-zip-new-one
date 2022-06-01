@@ -27,6 +27,7 @@ import {
   submitConsult,
 } from "../../../reduxUtils/services/History";
 import { uploadFileService } from "../../../reduxUtils/services/uploadFile";
+import { useHistory } from "react-router-dom";
 
 let fileList = [];
 const ExpertConsult = () => {
@@ -42,6 +43,7 @@ const ExpertConsult = () => {
   let items = location.split("/");
   console.log(items[2]);
   var patientNumber = items[2];
+  const history = useHistory();
 
   const [inputs, setInputs] = useState({ patient_id: dataList[0]?.id });
   const handleChange = (event) => {
@@ -119,7 +121,7 @@ const ExpertConsult = () => {
     submitConsult(inputs)
       .then((res) => {
         console.log(res);
-        if(!alert('Data Submitted Successfully!')){window.location.reload();}
+        if(!alert('Data Submitted Successfully!')){history.goBack();}
       })
       .catch((err) => {
         console.log(err);
