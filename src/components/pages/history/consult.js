@@ -119,7 +119,7 @@ const ExpertConsult = () => {
     submitConsult(inputs)
       .then((res) => {
         console.log(res);
-        // if(!alert('Data Submitted Successfully!')){window.location.reload();}
+        if(!alert('Data Submitted Successfully!')){window.location.reload();}
       })
       .catch((err) => {
         console.log(err);
@@ -177,7 +177,7 @@ const ExpertConsult = () => {
               <CFormGroup row>
               <CCol md="4">
               </CCol>
-                <CCol md="2">
+                {/* <CCol md="2">
                 <CButton
                   block
                   onClick={() => {
@@ -188,7 +188,7 @@ const ExpertConsult = () => {
                 >
                   Previous History
                 </CButton>
-                </CCol>
+                </CCol> */}
               </CFormGroup>
 
               <CCard>

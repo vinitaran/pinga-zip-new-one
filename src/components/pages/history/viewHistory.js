@@ -32,7 +32,7 @@ let fileList = [];
 const ViewHistory = () => {
   // const [expert, setExpert] = useState(true);
   //   const expert = window.localStorage.getItem('role') == 'the' ? false : true;
-  const expert = true;
+  const expert = false;
   console.log(expert);
 
   const [isLoading, setisLoading] = useState(false);
@@ -135,19 +135,25 @@ const ViewHistory = () => {
           <CCard>
             <CCardHeader>
               <h3>PINGA HEALTH HISTORY FOR {expert ? "EXPERTS" : "THE"}
-                <span style={{float:'right'}}>
-                    <CButton
-                        block
-                        onClick={() => {
-                          localStorage.setItem("productViewId", dataList[0].patient_id);
-                          window.location.href =
-                            "/admin/#/expert-consult/" + dataList[0].mobile;
-                        }}
-                        color="info"
-                      >
-                        Expert Form
-                      </CButton>
-                </span></h3>
+              {
+                  expert ? <span style={{ float: "right" }}  >
+                  <CButton
+                  size="md"
+                    block
+                    onClick={() => {
+                      localStorage.setItem(
+                        "productViewId",
+                        dataList[0].patient_id
+                      );
+                      window.location.href =
+                        "/admin/#/expert-consult/" + dataList[0].mobile;
+                    }}
+                    color="info"
+                  >
+                    Expert Form
+                  </CButton>
+                </span> : ""
+                }</h3>
             </CCardHeader>
             <CCardBody>
               <CFormGroup row>
@@ -167,10 +173,16 @@ const ViewHistory = () => {
                   </CLabel>
                 </CCol>
                 <CCol md="8">
-                  {dataList.map((data) => {
-                    const date = data?.created_at.split("T")[0];
+                {dataList.map((data) => {
+                    const date = new Date(data?.created_at);
+                    let d = new Date(Date.parse(date));
                     //   const day = date.getDate();
-                    return <><CLabel htmlFor="text-input">{date}</CLabel><br></br></>;
+                    return (
+                      <>
+                        <CLabel htmlFor="text-input">{d.toLocaleString()}</CLabel>
+                        <br></br>
+                      </>
+                    );
                   })}
                 </CCol>
               </CFormGroup>
@@ -190,11 +202,18 @@ const ViewHistory = () => {
                 </div>
               </CCard> */}
               {dataList.map((data) => {
-                console.log(data?.data?.private_observation);
+                const date = new Date(data?.created_at);
+                let d = new Date(Date.parse(date));
+                // this logs
+                // Fri, 08 Jul 2005 11:22:33 GMT
+                // for everyone
                 return (
                   <CCard style={{ backgroundColor: "#EBEDEF", padding: "1em" }}>
-                      <h5>Doctor Name: <b>{data?.dr_name}</b> | Date: {data?.created_at.split("T")[0]}</h5> 
-                      <hr></hr>
+                    <h5>
+                      Doctor Name: <b>{data?.dr_name}</b> | Date: {d.toLocaleString()}
+                    </h5>
+                    {/* {data?.created_at.split("T")[0]} */}
+                    <hr></hr>
                     <CForm className="form-horizontal">
                       {expert ? (
                         <CFormGroup row>
