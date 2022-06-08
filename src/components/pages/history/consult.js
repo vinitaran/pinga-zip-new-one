@@ -34,7 +34,6 @@ const ExpertConsult = () => {
   // const [expert, setExpert] = useState(true);
   //   const expert = window.localStorage.getItem('role') == 'the' ? false : true;
   const expert = true;
-  console.log(expert);
 
   const [isLoading, setisLoading] = useState(false);
 
@@ -169,10 +168,16 @@ const ExpertConsult = () => {
                   </CLabel>
                 </CCol>
                 <CCol md="6">
-                  {dataList.map((data) => {
-                    const date = data?.created_at.split("T")[0];
+                {dataList.map((data) => {
+                    const date = new Date(data?.created_at);
+                    let d = new Date(Date.parse(date));
                     //   const day = date.getDate();
-                    return <><CLabel htmlFor="text-input">{date}</CLabel><br></br></>;
+                    return (
+                      <>
+                        <CLabel htmlFor="text-input">{d.toLocaleString()}</CLabel>
+                        <br></br>
+                      </>
+                    );
                   })}
                 </CCol>
               </CFormGroup>
