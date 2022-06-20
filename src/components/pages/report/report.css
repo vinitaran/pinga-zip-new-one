@@ -36,11 +36,13 @@ p {
 .whatsapp__logo {
   width: 3em;
   height: 3em;
-  padding: 10px;
   border-radius: 15px;
   background-image: linear-gradient(135deg, #3abeaa 0%, #00c714 96%),
     linear-gradient(to bottom, #19191d, #19191d);
   margin-left: 1em;
+      display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .report__header__CTA {
@@ -463,6 +465,8 @@ img.Logo {
   padding: 5px;
   background-color: #25d366;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;align-items: center;
 }
 
 .Step-01 {
@@ -516,13 +520,17 @@ img.Logo {
   align-items: center;
 }
 
-.health__report__desc__card__heading__tick {
+.health__report__desc__card__heading__notick {
   width: 30px;
   height: 30px;
   margin-right: 1em;
   padding: 7px;
   border: solid 2px #5a5b6a;
   border-radius: 50%;
+}
+
+.health__report__desc__card__heading__tick{
+  margin-right: 1em;
 }
 
 .Pinga-Profile---free-for-the-first-1000-users {
@@ -602,6 +610,9 @@ img.Logo {
   /* opacity: 0.65; */
   background-color: #ed0156;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sexual-intimate-health-special-assessment {
@@ -635,7 +646,7 @@ img.Logo {
 .assessment__desc__one {
   display: flex;
   margin: 2em 0;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .assessment__desc__one__image {
@@ -752,7 +763,7 @@ img.Logo {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .doctor__notes__heading {
@@ -851,15 +862,6 @@ img.Logo {
   flex-direction: column;
 }
 
-.doctors__recommendation__tick {
-  width: 16.7px;
-  height: 16.7px;
-  padding: 1.7px 0px 6.7px 5.8px;
-  border: solid 2px #5a5b6a;
-  border-radius: 50%;
-  margin-top: 0.2em;
-}
-
 .Lifestyle-recommendations {
   font-size: 15px;
   font-weight: bold;
@@ -942,15 +944,6 @@ img.Logo {
   align-items: center;
 }
 
-.Vector {
-  width: 40px;
-  height: 40px;
-  flex-grow: 0;
-  margin: 5px 25px 5px 0;
-  padding: 7.8px 7.8px 8.9px 8.6px;
-  background-color: #fff;
-  border-radius: 50%;
-}
 
 .tabs {
   justify-content: center;
@@ -974,6 +967,7 @@ img.Logo {
   color: #fff;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .Rectangle-61 {
@@ -1211,4 +1205,136 @@ img.iconcashback {
   letter-spacing: 0.17px;
   text-align: left;
   color: #19191d;
+}
+
+img.Group-7686 {
+  width: 25px;
+  height: 25px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+.Rectangle-107 {
+  width: 325px;
+  padding: 10px 10px 10px 5px;
+  border-radius: 10px;
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: rgba(227, 235, 245, 0.25);
+  display: flex;
+}
+
+.lock__data{
+  display: flex;
+  flex-direction: column;
+}
+
+img.Group-7891 {
+  width: 40px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 0 5px 0 0;
+  object-fit: contain;
+}
+
+.Your-health-your-privacy-our-responsibility {
+  flex-grow: 0;
+  margin: 0 0 2px 5px;
+  font-size: 11px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #19191d;
+}
+
+.We-follow-strict-personal-data-protection-laws-and-our-system-is-End-to-end-encrypted {
+
+  flex-grow: 0;
+  margin: 2px 0 0 5px;
+  font-size: 9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.09px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+img.Group {
+  width: 51.9px;
+  height: 60px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+img.Group-7847 {
+  width: 30px;
+  height: 30px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+img.Group-7771 {
+  width: 20px;
+  height: 20px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+img.Group-7882 {
+  width: 160px;
+  height: 150px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+img.noun-stethoscope-4255828-1 {
+  width: 40px;
+  height: 40px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+img.iconcheck {
+  width: 20px;
+  height: 20px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+.recommendations{
+  border-bottom: 1px solid lightgray;
+}
+
+.It-will-address-the-root-causes-And-cure-you-with-a-holistic-approach-With-time-you-will-start-to {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+img.image-19 {
+  width: 127.9px;
+  height: 60px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+.Signature {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #ed0156;
+  text-transform: uppercase;
 }

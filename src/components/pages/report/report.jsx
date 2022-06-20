@@ -2,7 +2,27 @@ import React from "react";
 import Pinga from "../../../asset/Logo.svg";
 import "./report.css";
 import cashback from "../../../asset/icon/cashback@3x.png";
-import background from "../../../asset/background.png"
+import hours from "../../../asset/icon/24-hours@3x.png";
+import privacy from "../../../asset/icon/privacy.png";
+import science from "../../../asset/icon/science@3x.png";
+import check from "../../../asset/icon/check.png";
+import background from "../../../asset/background.png";
+import whatsapp from "../../../asset/whatsapp.png";
+import lock from "../../../asset/lock.png";
+import mental from "../../../asset/mental.png";
+import sexual from "../../../asset/sexual.png";
+import skin from "../../../asset/skin.png";
+import others from "../../../asset/others.png";
+import physical from "../../../asset/physical.png";
+import nut from "../../../asset/nut.png";
+import chronic from "../../../asset/chronic.png";
+import tick from "../../../asset/tick.png";
+import whiteTick from "../../../asset/whiteTick.png";
+import girls from "../../../asset/girls.png";
+import girl2 from "../../../asset/girl2.png";
+import shella from "../../../asset/shella.png";
+import docnote from "../../../asset/docnote.png";
+import sign from "../../../asset/sign.png";
 
 const report = () => {
   const currentGoals = [
@@ -12,6 +32,7 @@ const report = () => {
       textColor: "#19191d",
       heading1: "Mental",
       heading2: "Health",
+      src: mental,
     },
     {
       active: true,
@@ -19,6 +40,7 @@ const report = () => {
       textColor: "#19191d",
       heading1: "Physical",
       heading2: "Health",
+      src: physical,
     },
     {
       active: true,
@@ -26,6 +48,7 @@ const report = () => {
       textColor: "#19191d",
       heading1: "Sexual",
       heading2: "Health",
+      src: sexual,
     },
     {
       active: true,
@@ -33,6 +56,7 @@ const report = () => {
       textColor: "",
       heading1: "Skin",
       heading2: "Health",
+      src: skin,
     },
     {
       active: true,
@@ -40,6 +64,7 @@ const report = () => {
       textColor: "",
       heading1: "Nutrition",
       heading2: "& Diet",
+      src: nut,
     },
     {
       active: true,
@@ -47,6 +72,7 @@ const report = () => {
       textColor: "",
       heading1: "Chronic",
       heading2: "Illness",
+      src: chronic,
     },
     {
       active: true,
@@ -54,6 +80,7 @@ const report = () => {
       textColor: "",
       heading1: "Others",
       heading2: "& more",
+      src: others,
     },
   ];
 
@@ -103,11 +130,16 @@ const report = () => {
   const recommendations = [
     {
       name: "Lifestyle recommendations",
-      desc: ["Eat something high in fiber that includes protein to keep you full and energized. If you start the day out right, you tend to eat better overall and it helps lower your risk of diabetes and improves heart health.", "Not only that, but eating breakfast helps reduce brain fog, so you’ll be ready to go for those morning meetings."],
+      desc: [
+        "Eat something high in fiber that includes protein to keep you full and energized. If you start the day out right, you tend to eat better overall and it helps lower your risk of diabetes and improves heart health.",
+        "Not only that, but eating breakfast helps reduce brain fog, so you’ll be ready to go for those morning meetings.",
+      ],
     },
     {
       name: "Medical Recommendations",
-      desc: ["“Go dancing or try yoga,” says Moon. “Once you affirm your connection with your own body, you can affirm your connection with your partner’s body.” One survey found that coupled but sexually inactive people were prone to feelings of sadness and felt unattractive. Reclaim your sexual power by finding new ways to move and get comfortable in your body."],
+      desc: [
+        "“Go dancing or try yoga,” says Moon. “Once you affirm your connection with your own body, you can affirm your connection with your partner’s body.” One survey found that coupled but sexually inactive people were prone to feelings of sadness and felt unattractive. Reclaim your sexual power by finding new ways to move and get comfortable in your body.",
+      ],
     },
     {
       name: "Lab Tests",
@@ -126,9 +158,23 @@ const report = () => {
           <div className="report__header__logo">
             <img src={Pinga} alt="logo" className="Logo" />
           </div>
+          <div class="Rectangle-107">
+            <img src={lock} class="Group-7891"></img>
+            <div className="lock__data">
+              <span class="Your-health-your-privacy-our-responsibility">
+                Your health, your privacy, our responsibility!
+              </span>
+              <span class="We-follow-strict-personal-data-protection-laws-and-our-system-is-End-to-end-encrypted">
+                We follow strict personal data protection laws and our system is
+                End to end encrypted.
+              </span>
+            </div>
+          </div>
           <div className="report__header__CTA">
             <p>CHAT WITH PINGA</p>
-            <div class="whatsapp__logo"></div>
+            <div class="whatsapp__logo">
+              <img src={whatsapp} class="Group-7686" />
+            </div>
           </div>
         </div>
         <div className="report__mainDiv">
@@ -205,7 +251,9 @@ const report = () => {
                     <div
                       class="Ellipse-84"
                       style={{ backgroundColor: goal.color }}
-                    ></div>
+                    >
+                      <img src={goal.src} class="Group" />
+                    </div>
                     <div
                       class="Mental-Health"
                       style={{ color: goal.textColor }}
@@ -232,7 +280,9 @@ const report = () => {
               <div class="health__report">
                 <div className="health__report__heading">
                   <div className="heath__report__Step">
-                    <div class="Ellipse-59"></div>
+                    <div class="Ellipse-59">
+                      <img src={whiteTick} class="Group-7771" />
+                    </div>
                     <span class="Step-01">Step {i + 1}</span>
                   </div>
                   <div className="heath__report__text">
@@ -247,12 +297,11 @@ const report = () => {
                       <div class="health__report__desc__card">
                         <div class="health__report__desc__card__heading">
                           {data.tick ? (
-                            <div
-                              className="health__report__desc__card__heading__tick"
-                              style={{ border: "solid 2px #25d366" }}
-                            ></div>
+                            <div className="health__report__desc__card__heading__tick">
+                              <img src={tick} class="Group-7847" />
+                            </div>
                           ) : (
-                            <div className="health__report__desc__card__heading__tick"></div>
+                            <div className="health__report__desc__card__heading__notick"></div>
                           )}
                           <span class="Pinga-Profile---free-for-the-first-1000-users">
                             {data.heading}
@@ -281,7 +330,9 @@ const report = () => {
           })}
           <div class="assessment__card">
             <div className="health__assessment__heading">
-              <div className="assessment__image"></div>
+              <div className="assessment__image">
+                <img src={sexual} class="Group" />
+              </div>
               <div className="assessment__heading">
                 <span class="sexual-intimate-health-special-assessment">
                   sexual & intimate health special assessment
@@ -296,7 +347,9 @@ const report = () => {
               </div>
             </div>
             <div className="assessment__desc__one">
-              <div className="assessment__desc__one__image"></div>
+              <div className="assessment__desc__one__image">
+                <img src={girls} class="Group-7882" />
+              </div>
               <div className="assessment__desc__one__data">
                 <span class="-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f">
                   <span class="text-style-1">7 out of 10 Pinga users</span>
@@ -320,7 +373,9 @@ const report = () => {
                   cause.
                 </span>
               </div>
-              <div className="assessment__desc__one__image"></div>
+              <div className="assessment__desc__one__image">
+                <img src={girl2} class="Group-7882" />
+              </div>
             </div>
           </div>
           <div className="report__user__overview">
@@ -336,7 +391,9 @@ const report = () => {
           </div>
           <div class="doctor">
             <div className="doctor__image">
-              <div class="Rectangle-72"></div>
+              <div class="Rectangle-72">
+                <img src={shella} class="Rectangle-72" />
+              </div>
             </div>
             <div className="doctor__details">
               <span class="Dr-Shella-Jamal">Dr. Shella Jamal</span>
@@ -356,7 +413,9 @@ const report = () => {
           </div>
           <div class="doctor__notes">
             <div className="doctor__notes__heading">
-              <div class="doctor__notes__heading__image"></div>
+              <div class="doctor__notes__heading__image">
+                <img src={docnote} class="noun-stethoscope-4255828-1" />
+              </div>
               <div className="doctor__notes__heading__details">
                 <div class="Your-Doctors-notes">Your Doctor’s notes</div>
                 <div class="Priyanjali-heres-what-your-doctor-Shella-observed-and-recommended-as-follow-Up-next-steps">
@@ -381,28 +440,41 @@ const report = () => {
               Pinga and your expert will work together with you on the
               following:
             </span>
-            {recommendations.map((data) => {
-              return (
-                <div className="doctors__recommendation">
-                  <div className="doctors__recommendation__tick"></div>
-                  <div className="doctors__recommendation__data">
-                    <div className="doctors__recommendation__heading">
-                      <span class="Lifestyle-recommendations">{data.name}</span>
-                      <ul>
-                        {data.desc.map((rec) => {
-                          return (
-                            <li class="Eat-something-high-in-fiber-that-includes-protein-to-keep-you-full-and-energized-If-you-start-the-d">
-                              {rec}
-                            </li>
-                          );
-                        })}
-                      </ul>
+            <div className="recommendations">
+              {recommendations.map((data) => {
+                return (
+                  <div className="doctors__recommendation">
+                    <div className="doctors__recommendation__tick">
+                      <img src={check} class="iconcheck"></img>
                     </div>
-                    <div className="doctors__recommendation__points"></div>
+                    <div className="doctors__recommendation__data">
+                      <div className="doctors__recommendation__heading">
+                        <span class="Lifestyle-recommendations">
+                          {data.name}
+                        </span>
+                        <ul>
+                          {data.desc.map((rec) => {
+                            return (
+                              <li class="Eat-something-high-in-fiber-that-includes-protein-to-keep-you-full-and-energized-If-you-start-the-d">
+                                {rec}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                      <div className="doctors__recommendation__points"></div>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+            <span class="It-will-address-the-root-causes-And-cure-you-with-a-holistic-approach-With-time-you-will-start-to">
+              It will address the root causes. And cure you with a holistic
+              approach. With time you will start to notice the difference and
+              feel better. It’s a safe space.
+            </span>
+            <img src={sign} class="image-19"></img>
+            <span class="Signature">Signature</span>
           </div>
           <div className="brownie__point">
             <span class="Brownie-points-for-your-openness-and-for-your-incredible-willingness-to-share-Next-appointment-sche">
@@ -430,7 +502,7 @@ const report = () => {
             <span class="ASK-QUESTIONS">ASK QUESTIONS?</span>
           </div>
           <div class="whatsapp_button">
-            <div class="Vector"></div>
+              <img src={whatsapp} class="Group-7686" style={{width:"35px", height:"35px", marginRight:"1em"}}/>
             <span class="chat-with-pinga-health-Advisor">
               Chat with Pinga Health Advisor
             </span>
@@ -477,19 +549,19 @@ const report = () => {
                 <span class="Money-back-Guranteed">Money-back Guranteed</span>
               </div>
               <div class="Rectangle-47">
-                <img src={cashback} className="iconcashback" />
+                <img src={hours} className="iconcashback" />
                 <span class="Money-back-Guranteed ">
                   Available 24x7 Tele-health Expert
                 </span>
               </div>
               <div class="Rectangle-47">
-                <img src={cashback} className="iconcashback" />
+                <img src={science} className="iconcashback" />
                 <span class="Money-back-Guranteed ">
                   Backed by science & Research
                 </span>
               </div>
               <div class="Rectangle-47">
-                <img src={cashback} className="iconcashback" />
+                <img src={privacy} className="iconcashback" />
                 <span class="Money-back-Guranteed ">
                   Data privacy Responsibility
                 </span>

@@ -7,9 +7,9 @@ import image4 from "../asset/image6@3x.png";
 import image5 from "../asset/image8@3x.png";
 import image6 from "../asset/image10@3x.png";
 import pinga from "../asset/pinga.svg";
-import youtube from "../asset/icon/youtube.svg";
-import twiiter from "../asset/icon/twitter-o.svg";
-import insta from "../asset/icon/instagram-o.svg";
+import youtube from "../asset/icon/youtube.png";
+import twiiter from "../asset/icon/twitter-o.png";
+import insta from "../asset/icon/instagram-o.png";
 
 const TheFooter = () => {
   return (
