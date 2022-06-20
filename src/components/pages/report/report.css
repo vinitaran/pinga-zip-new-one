@@ -2,9 +2,20 @@ p {
   margin: 0;
 }
 
-.c-main{
+.c-main {
   background-color: white;
-  background-image: linear-gradient(to bottom, rgba(227, 235, 245, 0) 0%, #e3ebf5 55%, #e3ebf5 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(227, 235, 245, 0) 0%,
+    #e3ebf5 55%,
+    #e3ebf5 100%
+  );
+}
+
+.background__image {
+  background: url("../../../asset/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .report {
@@ -19,8 +30,8 @@ p {
   display: flex;
   justify-content: space-between;
   grid-area: report__header;
+  margin: 2em;
 }
-
 
 .whatsapp__logo {
   width: 3em;
@@ -547,7 +558,8 @@ img.Logo {
   margin: 30px 0 0 5px;
   padding: 11px 26px;
   border-radius: 500px;
-  background-image: linear-gradient(100deg, #3abeaa 0%, #00c714 96%), linear-gradient(to bottom, #19191d, #19191d);
+  background-image: linear-gradient(100deg, #3abeaa 0%, #00c714 96%),
+    linear-gradient(to bottom, #19191d, #19191d);
   cursor: pointer;
 }
 
@@ -562,7 +574,7 @@ img.Logo {
   color: #19191d;
 }
 
-.assessment__card{
+.assessment__card {
   width: 800px;
   padding: 30px 40px 47px 30px;
   border-radius: 25px;
@@ -571,11 +583,11 @@ img.Logo {
   background-color: #fff;
 }
 
-.health__assessment__heading{
+.health__assessment__heading {
   display: flex;
 }
 
-.assessment__heading{
+.assessment__heading {
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -615,23 +627,24 @@ img.Logo {
   color: #19191d;
 }
 
-.Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy .text-style-1 {
+.Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy
+  .text-style-1 {
   font-weight: normal;
 }
 
-.assessment__desc__one{
+.assessment__desc__one {
   display: flex;
   margin: 2em 0;
   justify-content: space-between;
 }
 
-.assessment__desc__one__image{
+.assessment__desc__one__image {
   width: 150px;
   height: 150px;
   background-color: #fff;
 }
 
-.assessment__desc__one__data{
+.assessment__desc__one__data {
   width: 70%;
 }
 
@@ -646,7 +659,8 @@ img.Logo {
   color: #19191d;
 }
 
-.-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f .text-style-1 {
+.-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f
+  .text-style-1 {
   font-weight: bold;
 }
 
@@ -669,8 +683,9 @@ img.Logo {
   border-radius: 500px;
 }
 
-.doctor__details{
-  display: flex;flex-direction: column;
+.doctor__details {
+  display: flex;
+  flex-direction: column;
   width: 70%;
 }
 
@@ -686,7 +701,6 @@ img.Logo {
 }
 
 .MBBS-DNB-MRCOG-1-fellowship-in-ART-IVF-Germany-Gold-Medalist {
-
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -697,7 +711,7 @@ img.Logo {
   color: #5a5b6a;
 }
 
-.doctor__specialty{
+.doctor__specialty {
   display: flex;
   flex-direction: column;
 }
@@ -729,7 +743,137 @@ img.Logo {
   color: #5a5b6a;
 }
 
-.brownie__point{
+.doctor__notes {
+  width: 800px;
+  padding: 30px 40px 40px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.doctor__notes__heading {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1em;
+}
+
+.doctor__notes__heading__image {
+  width: 80px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 0 20px 0 0;
+  padding: 20px;
+  opacity: 0.65;
+  background-color: #ed0156;
+  border-radius: 50%;
+}
+
+.doctor__notes__heading__details {
+  width: 90%;
+}
+
+.Your-Doctors-notes {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #9b0852;
+  text-transform: uppercase;
+}
+
+.Priyanjali-heres-what-your-doctor-Shella-observed-and-recommended-as-follow-Up-next-steps {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19191d;
+}
+
+.Observation-during-video-consultation---Notes-by-the-doctor-to-be-reworded-by-health-advisor-for-cu {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.Its-alright-it-will-get-better-with-the-subsequent-steps-and-lifestyle-management {
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19191d;
+}
+
+.As-next-steps-for-the-next-7-days-Pinga-and-your-expert-will-work-together-with-you-on-the-followi {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.As-next-steps-for-the-next-7-days-Pinga-and-your-expert-will-work-together-with-you-on-the-followi
+  .text-style-1 {
+  font-weight: bold;
+}
+
+.doctors__recommendation {
+  display: flex;
+}
+
+.doctors__recommendation__data {
+  width: 95%;
+}
+
+.doctors__recommendation__heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctors__recommendation__tick {
+  width: 16.7px;
+  height: 16.7px;
+  padding: 1.7px 0px 6.7px 5.8px;
+  border: solid 2px #5a5b6a;
+  border-radius: 50%;
+  margin-top: 0.2em;
+}
+
+.Lifestyle-recommendations {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5b6a;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.brownie__point {
   width: 800px;
   padding: 30px 40px;
   border-radius: 25px;
@@ -751,17 +895,16 @@ img.Logo {
   color: #19191d;
 }
 
-.Brownie-points-for-your-openness-and-for-your-incredible-willingness-to-share-Next-appointment-sche .text-style-1 {
+.Brownie-points-for-your-openness-and-for-your-incredible-willingness-to-share-Next-appointment-sche
+  .text-style-1 {
   font-weight: bold;
 }
 
-.extra__details{
+.extra__details {
   width: 740px;
 }
 
 .Below-are-some-lifestyle-management-tools-and-courses-for-you-from-the-Pinga-studio-and-collection {
-
-  
   font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
@@ -785,15 +928,16 @@ img.Logo {
   color: #5a5b6a;
 }
 
-.whatsapp_button{
+.whatsapp_button {
   width: 270px;
   height: 80px;
   padding: 15px 25px 15px 20px;
   border-radius: 15px;
-  background-image: linear-gradient(107deg, #3abeaa 0%, #00c714 96%), linear-gradient(to bottom, #19191d, #19191d);
+  background-image: linear-gradient(107deg, #3abeaa 0%, #00c714 96%),
+    linear-gradient(to bottom, #19191d, #19191d);
 }
 
-.whatsapp_button{
+.whatsapp_button {
   display: flex;
   align-items: center;
 }
@@ -808,13 +952,13 @@ img.Logo {
   border-radius: 50%;
 }
 
-.tabs{
-      justify-content: center;
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3em;
-        margin: 3em 0;
+.tabs {
+  justify-content: center;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 3em 0;
 }
 
 .chat-with-pinga-health-Advisor {
@@ -828,23 +972,24 @@ img.Logo {
   letter-spacing: 0.17px;
   text-align: left;
   color: #fff;
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Rectangle-61 {
   width: 190.2px;
   height: 145px;
   padding: 25px 30.7px 43px 17.6px;
-  opacity: 0.7;
   border-radius: 15px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
-  background-color: #ffadf7;
+  background-color: #f8d1f8;
 }
 
-.pinga__details{
+.pinga__details {
   display: grid;
   row-gap: 1em;
   width: 470px;
+  margin-bottom: 6em;
 }
 
 .Once-you-have-tried-Pinga-you-will-never-go-back {
@@ -859,7 +1004,6 @@ img.Logo {
 }
 
 .Sustain-your-overall-good-health-with-Pinga-the-worlds-1st-complete-health-companion-for-women {
-
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -870,11 +1014,11 @@ img.Logo {
   color: #5a5b6a;
 }
 
-.pinga__details{
+.pinga__details {
   width: 492px;
 }
 
-.pinga__details__tabs{
+.pinga__details__tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -885,13 +1029,14 @@ img.Logo {
   width: 235px;
   height: 70px;
   padding: 14px 20px 15px 15px;
-  opacity: 0.5;
+  opacity: 0.8;
   border-radius: 15px;
   border: solid 1px #5a5b6a;
   background-color: #fff;
+  display: flex;
 }
 
-.footer{
+.footer {
   height: 420px;
   flex-grow: 0;
   padding: 4em 8em;
@@ -900,7 +1045,7 @@ img.Logo {
   width: 100%;
 }
 
-.footer__top{
+.footer__top {
   display: flex;
 }
 
@@ -929,25 +1074,24 @@ img.Logo {
   color: #5a5b6a;
 }
 
-.footer__third{
+.footer__third {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2em 0;
 }
 
-.footer__icons{
+.footer__icons {
   width: 20%;
 }
 
-
-.funded__by{
+.funded__by {
   display: flex;
   flex-direction: column;
   margin: 0.5em;
 }
 
-.funded__images{
+.funded__images {
   display: flex;
   justify-content: space-between;
   margin: 2em 0;
@@ -985,7 +1129,7 @@ img.iconyoutube {
   margin: 0 0 0 2em;
 }
 
-.footer__bottom{
+.footer__bottom {
   display: flex;
   justify-content: space-between;
   margin: 1em 0;
@@ -1015,4 +1159,56 @@ img.iconyoutube {
   letter-spacing: 0.17px;
   text-align: right;
   color: #5a5b6a;
+}
+
+.Money-back-Guranteed {
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+img.iconcashback {
+  width: 40px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 1px 10px 0 0;
+  object-fit: contain;
+}
+
+.Coming-soon {
+  width: 132px;
+  height: 20px;
+  flex-grow: 0;
+  margin: 0 10px 17px 0;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #5a5b6a;
+  text-transform: uppercase;
+}
+
+.Well-Being-Reports {
+  width: 142px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 17px 0 0;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #19191d;
 }

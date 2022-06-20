@@ -1,8 +1,8 @@
 import React from "react";
 import Pinga from "../../../asset/Logo.svg";
 import "./report.css";
-
-
+import cashback from "../../../asset/icon/cashback@3x.png";
+import background from "../../../asset/background.png"
 
 const report = () => {
   const currentGoals = [
@@ -98,6 +98,25 @@ const report = () => {
         result: "",
       },
     ],
+  ];
+
+  const recommendations = [
+    {
+      name: "Lifestyle recommendations",
+      desc: ["Eat something high in fiber that includes protein to keep you full and energized. If you start the day out right, you tend to eat better overall and it helps lower your risk of diabetes and improves heart health.", "Not only that, but eating breakfast helps reduce brain fog, so you’ll be ready to go for those morning meetings."],
+    },
+    {
+      name: "Medical Recommendations",
+      desc: ["“Go dancing or try yoga,” says Moon. “Once you affirm your connection with your own body, you can affirm your connection with your partner’s body.” One survey found that coupled but sexually inactive people were prone to feelings of sadness and felt unattractive. Reclaim your sexual power by finding new ways to move and get comfortable in your body."],
+    },
+    {
+      name: "Lab Tests",
+      desc: ["Not recommeded for now."],
+    },
+    {
+      name: "General Notes",
+      desc: ["Not recommeded for now."],
+    },
   ];
 
   return (
@@ -335,6 +354,56 @@ const report = () => {
               <span class="Gynae">IN2183123</span>
             </div>
           </div>
+          <div class="doctor__notes">
+            <div className="doctor__notes__heading">
+              <div class="doctor__notes__heading__image"></div>
+              <div className="doctor__notes__heading__details">
+                <div class="Your-Doctors-notes">Your Doctor’s notes</div>
+                <div class="Priyanjali-heres-what-your-doctor-Shella-observed-and-recommended-as-follow-Up-next-steps">
+                  Priyanjali, here’s what your doctor, Shella observed and
+                  recommended as follow Up & next steps
+                </div>
+              </div>
+            </div>
+            <span class="Observation-during-video-consultation---Notes-by-the-doctor-to-be-reworded-by-health-advisor-for-cu">
+              Observation during video consultation - Notes by the doctor (to be
+              reworded by health advisor for customers to read and understand
+              easily
+            </span>
+            <span class="Its-alright-it-will-get-better-with-the-subsequent-steps-and-lifestyle-management">
+              It’s alright, it will get better with the subsequent steps and
+              lifestyle management.
+            </span>
+            <span class="As-next-steps-for-the-next-7-days-Pinga-and-your-expert-will-work-together-with-you-on-the-followi">
+              <span class="text-style-1">
+                As next steps, for the next 7 days,{" "}
+              </span>
+              Pinga and your expert will work together with you on the
+              following:
+            </span>
+            {recommendations.map((data) => {
+              return (
+                <div className="doctors__recommendation">
+                  <div className="doctors__recommendation__tick"></div>
+                  <div className="doctors__recommendation__data">
+                    <div className="doctors__recommendation__heading">
+                      <span class="Lifestyle-recommendations">{data.name}</span>
+                      <ul>
+                        {data.desc.map((rec) => {
+                          return (
+                            <li class="Eat-something-high-in-fiber-that-includes-protein-to-keep-you-full-and-energized-If-you-start-the-d">
+                              {rec}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                    <div className="doctors__recommendation__points"></div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
           <div className="brownie__point">
             <span class="Brownie-points-for-your-openness-and-for-your-incredible-willingness-to-share-Next-appointment-sche">
               <span class="text-style-1">Brownie points </span>
@@ -367,27 +436,32 @@ const report = () => {
             </span>
           </div>
           <div className="tabs">
-            <div
-              class="Rectangle-61"
-              style={{ backgroundColor: "#fddb60" }}
-            ></div>
-            <div class="Rectangle-61"></div>
-            <div
-              class="Rectangle-61"
-              style={{ backgroundColor: "#ffadad" }}
-            ></div>
-            <div
-              class="Rectangle-61"
-              style={{ backgroundColor: "#ffaac4" }}
-            ></div>
-            <div
-              class="Rectangle-61"
-              style={{ backgroundColor: "#96e1c0" }}
-            ></div>
-            <div
-              class="Rectangle-61"
-              style={{ backgroundColor: "#bccfe7" }}
-            ></div>
+            <div class="Rectangle-61" style={{ backgroundColor: "#F7E8AD" }}>
+              <div class="Coming-soon">Coming soon</div>
+              <div class="Well-Being-Reports">Well Being Reports</div>
+            </div>
+            <div class="Rectangle-61">
+              <div class="Coming-soon">Coming soon</div>
+              <div class="Well-Being-Reports">Self Journaling</div>
+            </div>
+            <div class="Rectangle-61" style={{ backgroundColor: "#F8D1D3" }}>
+              <div class="Coming-soon">Coming soon</div>
+              <div class="Well-Being-Reports">Moodometer & hormonometer</div>
+            </div>
+            <div class="Rectangle-61" style={{ backgroundColor: "#F8CFDF" }}>
+              <div class="Coming-soon">Coming soon</div>
+              <div class="Well-Being-Reports">
+                Pinga lifestyle and wellness courses{" "}
+              </div>
+            </div>
+            <div class="Rectangle-61" style={{ backgroundColor: "#CDEDE3" }}>
+              <div class="Coming-soon">Coming soon</div>
+              <div class="Well-Being-Reports">Meditation and more</div>
+            </div>
+            <div class="Rectangle-61" style={{ backgroundColor: "#D6E2F0" }}>
+              <div class="Coming-soon">Coming soon</div>
+              <div class="Well-Being-Reports">Social Pinga Community</div>
+            </div>
           </div>
           <div className="pinga__details">
             <div class="Once-you-have-tried-Pinga-you-will-never-go-back">
@@ -398,10 +472,28 @@ const report = () => {
               complete health companion for women
             </div>
             <div className="pinga__details__tabs">
-              <div class="Rectangle-47"></div>
-              <div class="Rectangle-47"></div>
-              <div class="Rectangle-47"></div>
-              <div class="Rectangle-47"></div>
+              <div class="Rectangle-47">
+                <img src={cashback} className="iconcashback" />
+                <span class="Money-back-Guranteed">Money-back Guranteed</span>
+              </div>
+              <div class="Rectangle-47">
+                <img src={cashback} className="iconcashback" />
+                <span class="Money-back-Guranteed ">
+                  Available 24x7 Tele-health Expert
+                </span>
+              </div>
+              <div class="Rectangle-47">
+                <img src={cashback} className="iconcashback" />
+                <span class="Money-back-Guranteed ">
+                  Backed by science & Research
+                </span>
+              </div>
+              <div class="Rectangle-47">
+                <img src={cashback} className="iconcashback" />
+                <span class="Money-back-Guranteed ">
+                  Data privacy Responsibility
+                </span>
+              </div>
             </div>
           </div>
         </div>

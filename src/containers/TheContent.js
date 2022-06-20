@@ -18,8 +18,9 @@ const loading = (
 
 const TheContent = () => {
   return (
-    <main className="c-main">
-      <CContainer fluid>
+    <main className="c-main" style={{padding:"0"}}>
+      <div className="background__image">
+        <CContainer fluid>
         <Suspense fallback={loading}>
           <Switch>
             {routes.map((route, idx) => {
@@ -40,6 +41,8 @@ const TheContent = () => {
           </Switch>
         </Suspense>
       </CContainer>
+      </div>
+      
     </main>
   )
 }
