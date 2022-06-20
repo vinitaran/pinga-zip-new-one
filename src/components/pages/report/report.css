@@ -1,0 +1,1018 @@
+p {
+  margin: 0;
+}
+
+.c-main{
+  background-color: white;
+  background-image: linear-gradient(to bottom, rgba(227, 235, 245, 0) 0%, #e3ebf5 55%, #e3ebf5 100%);
+}
+
+.report {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-row-gap: 1em;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "report__header report__header report__header report__header report__header report__header report__header report__header";
+}
+
+.report__header {
+  display: flex;
+  justify-content: space-between;
+  grid-area: report__header;
+}
+
+
+.whatsapp__logo {
+  width: 3em;
+  height: 3em;
+  padding: 10px;
+  border-radius: 15px;
+  background-image: linear-gradient(135deg, #3abeaa 0%, #00c714 96%),
+    linear-gradient(to bottom, #19191d, #19191d);
+  margin-left: 1em;
+}
+
+.report__header__CTA {
+  display: flex;
+  align-items: center;
+}
+
+img.Logo {
+  width: 131.4px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.report__mainDiv {
+  max-width: 1000px;
+  grid-area: report__mainDiv;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  display: grid;
+  row-gap: 2em;
+  /* justify-content: center; */
+  justify-items: center;
+}
+
+.Personal-health-dashboard-for-active-integrated-health {
+  background-image: linear-gradient(
+    92deg,
+    #ffbd4a -3%,
+    #f97b4e 29%,
+    #ed0156 81%
+  );
+  font-size: 1.5em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.21px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.report__user__overview {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Pinga-Patient-ID-01 {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.report__user__details__dessc {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.Phone-8151955277 {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: right;
+  color: #5a5b6a;
+}
+
+.Phone-8151955277 .text-style-1 {
+  font-weight: normal;
+}
+
+.Email-riakapoorsgmailcom {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: right;
+  color: #5a5b6a;
+}
+
+.Email-riakapoorsgmailcom .text-style-1 {
+  font-weight: normal;
+}
+
+.report__user__details {
+  width: 100%;
+  max-width: 800px;
+  /* height: 200px; */
+  padding: 30px 40px 27px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: #fff;
+}
+
+.Rectangle-66 {
+  width: 80px;
+  height: 80px;
+  border-radius: 500px;
+  border: solid 1px rgba(25, 25, 29, 0.15);
+}
+
+.patient__data {
+  /* width: 90%; */
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.patient__details {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  border-bottom: 1px solid #5a5b6a;
+}
+
+.patient__body__details {
+  display: flex;
+  flex: 1;
+}
+
+.patient__name {
+  padding-left: 2em;
+}
+
+.patient__name,
+.patient__height,
+.patient__weight,
+.patient__bmi {
+  flex: 1;
+}
+
+.Ria-Kapoor {
+  height: 30px;
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.21px;
+  text-align: left;
+  color: #19191d;
+}
+
+.-yrs-She-Her {
+  height: 18px;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.HEIGHT {
+  height: 16px;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.-FT {
+  height: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.WEIGHT {
+  height: 16px;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.-KG {
+  height: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.BMI {
+  height: 16px;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.NORMAL {
+  height: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.patient__bmi__rank {
+  display: flex;
+}
+
+.Rectangle-99 {
+  width: 8px;
+  height: 15px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  background-color: #25d366;
+}
+
+.Rectangle-105 {
+  width: 8px;
+  height: 15px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+
+.You-can-see-details-here {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #5a5b6a;
+  margin: 1em;
+}
+
+.View-notes-from-doctor {
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #9b0852;
+  margin: 1em;
+}
+
+.patient__health {
+  width: 800px;
+  height: 350px;
+  margin: 2em 0;
+  padding: 40px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: #fff;
+}
+
+.patient__health__heading {
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.21px;
+  text-align: left;
+  color: #19191d;
+  flex: 1;
+}
+
+.patient__health__desc {
+  display: flex;
+  flex: 1 2;
+  padding-bottom: 1em;
+  border-bottom: 1px solid lightgray;
+}
+
+.Based-on-your-general-health-assessment-we-understand-your-goal-is-to-improve-your-Physical-Health {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #19191d;
+}
+
+.Based-on-your-general-health-assessment-we-understand-your-goal-is-to-improve-your-Physical-Health
+  .text-style-1 {
+  font-weight: 600;
+}
+
+.patient__health__data {
+  flex: 3;
+}
+
+.patient__health__images {
+  display: flex;
+  margin: 2em;
+  justify-content: space-between;
+}
+
+.patient__health__image {
+  display: flex;
+  flex-direction: column;
+}
+
+.Ellipse-84 {
+  width: 80px;
+  height: 80px;
+  margin: 0 0 20px;
+  padding: 10px 14.1px 10px 14px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.Mental-Health {
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: center;
+  color: lightgray;
+}
+
+.Hang-in-there-youll-feel-much-better-in-the-coming-days-Keep-tracking-your-health-progress-with-P {
+  width: 740px;
+  /* margin: 50px 30px; */
+
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.Health-Journey-Plan-for-Ria-Kapoor {
+  width: 740px;
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.21px;
+  text-align: left;
+  color: #19191d;
+}
+
+.health__report {
+  width: 800px;
+  height: 450px;
+  padding: 25px 30px;
+  /* opacity: 0.6; */
+  border-radius: 25px;
+  background-color: #e3ebf5;
+  /* background-color: #c6d7ee; */
+  display: flex;
+  flex-direction: column;
+}
+
+.health__report__heading {
+  display: flex;
+  align-items: center;
+}
+
+.heath__report__Step {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.heath__report__text {
+  flex: 4;
+}
+
+.Ellipse-59 {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #25d366;
+  border-radius: 50%;
+}
+
+.Step-01 {
+  margin-left: 1em;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.Pingas-process-to-help-you-become-the-better-version-of-yourself-everyday-Starting-with-Pinga-gene {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.health__report__desc {
+  background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: left;
+  background-size: 1px 20px;
+  background-repeat: repeat-y;
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.health__report__desc__card {
+  width: 275px;
+  height: 275px;
+  padding: 20px 20px 135px 15px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: #fff;
+}
+
+.health__report__desc__card__heading {
+  display: flex;
+  align-items: center;
+}
+
+.health__report__desc__card__heading__tick {
+  width: 30px;
+  height: 30px;
+  margin-right: 1em;
+  padding: 7px;
+  border: solid 2px #5a5b6a;
+  border-radius: 50%;
+}
+
+.Pinga-Profile---free-for-the-first-1000-users {
+  width: 80%;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.health__report__desc__card__data {
+  margin: 2em 0;
+}
+
+.General-Health---with-assessment {
+  font-size: 1.3em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.21px;
+  text-align: left;
+  color: #19191d;
+}
+
+.Rectangle-7 {
+  width: 235px;
+  height: 40px;
+  margin: 30px 0 0 5px;
+  padding: 11px 26px;
+  border-radius: 500px;
+  background-image: linear-gradient(100deg, #3abeaa 0%, #00c714 96%), linear-gradient(to bottom, #19191d, #19191d);
+  cursor: pointer;
+}
+
+.Talk-to-health-Advisor {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: center;
+  color: #19191d;
+}
+
+.assessment__card{
+  width: 800px;
+  padding: 30px 40px 47px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: #fff;
+}
+
+.health__assessment__heading{
+  display: flex;
+}
+
+.assessment__heading{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-bottom: 1px solid lightgray;
+}
+
+.assessment__image {
+  width: 80px;
+  height: 80px;
+  margin: 0 1em 0.5em 0;
+  padding: 0.2px 1.5px 1.5px 0.2px;
+  /* opacity: 0.65; */
+  background-color: #ed0156;
+  border-radius: 50%;
+}
+
+.sexual-intimate-health-special-assessment {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #ed0156;
+  text-transform: uppercase;
+}
+
+.Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy {
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19191d;
+}
+
+.Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy .text-style-1 {
+  font-weight: normal;
+}
+
+.assessment__desc__one{
+  display: flex;
+  margin: 2em 0;
+  justify-content: space-between;
+}
+
+.assessment__desc__one__image{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+}
+
+.assessment__desc__one__data{
+  width: 70%;
+}
+
+.-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19191d;
+}
+
+.-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f .text-style-1 {
+  font-weight: bold;
+}
+
+.doctor {
+  width: 800px;
+  padding: 30px 71px 29px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.Rectangle-72 {
+  width: 80px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 0 20px 1px 0;
+  border-radius: 500px;
+}
+
+.doctor__details{
+  display: flex;flex-direction: column;
+  width: 70%;
+}
+
+.Dr-Shella-Jamal {
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.21px;
+  text-align: left;
+  color: #19191d;
+}
+
+.MBBS-DNB-MRCOG-1-fellowship-in-ART-IVF-Germany-Gold-Medalist {
+
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.doctor__specialty{
+  display: flex;
+  flex-direction: column;
+}
+
+.Specialist {
+  width: 86px;
+  height: 16px;
+  flex-grow: 0;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.Gynae {
+  width: 81px;
+  height: 18px;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.brownie__point{
+  width: 800px;
+  padding: 30px 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(90, 91, 106, 0.15);
+  background-color: rgba(255, 189, 74, 0.45);
+}
+
+.Brownie-points-for-your-openness-and-for-your-incredible-willingness-to-share-Next-appointment-sche {
+  width: 720px;
+  height: 100px;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19191d;
+}
+
+.Brownie-points-for-your-openness-and-for-your-incredible-willingness-to-share-Next-appointment-sche .text-style-1 {
+  font-weight: bold;
+}
+
+.extra__details{
+  width: 740px;
+}
+
+.Below-are-some-lifestyle-management-tools-and-courses-for-you-from-the-Pinga-studio-and-collection {
+
+  
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.ASK-QUESTIONS {
+  width: 214px;
+  height: 29px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.24px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.whatsapp_button{
+  width: 270px;
+  height: 80px;
+  padding: 15px 25px 15px 20px;
+  border-radius: 15px;
+  background-image: linear-gradient(107deg, #3abeaa 0%, #00c714 96%), linear-gradient(to bottom, #19191d, #19191d);
+}
+
+.whatsapp_button{
+  display: flex;
+  align-items: center;
+}
+
+.Vector {
+  width: 40px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 5px 25px 5px 0;
+  padding: 7.8px 7.8px 8.9px 8.6px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.tabs{
+      justify-content: center;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3em;
+        margin: 3em 0;
+}
+
+.chat-with-pinga-health-Advisor {
+  width: 160px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #fff;
+  display: flex;align-items: center;
+}
+
+.Rectangle-61 {
+  width: 190.2px;
+  height: 145px;
+  padding: 25px 30.7px 43px 17.6px;
+  opacity: 0.7;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffadf7;
+}
+
+.pinga__details{
+  display: grid;
+  row-gap: 1em;
+  width: 470px;
+}
+
+.Once-you-have-tried-Pinga-you-will-never-go-back {
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19191d;
+}
+
+.Sustain-your-overall-good-health-with-Pinga-the-worlds-1st-complete-health-companion-for-women {
+
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.pinga__details{
+  width: 492px;
+}
+
+.pinga__details__tabs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.Rectangle-47 {
+  width: 235px;
+  height: 70px;
+  padding: 14px 20px 15px 15px;
+  opacity: 0.5;
+  border-radius: 15px;
+  border: solid 1px #5a5b6a;
+  background-color: #fff;
+}
+
+.footer{
+  height: 420px;
+  flex-grow: 0;
+  padding: 4em 8em;
+  /* opacity: 0.6; */
+  background-color: #e3ebf5;
+  width: 100%;
+}
+
+.footer__top{
+  display: flex;
+}
+
+.Be-part-of-KSP-commu {
+  width: 360px;
+  font-size: 32px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: 0.32px;
+  text-align: left;
+  color: black;
+}
+
+.Funded-through-Millenium-alliance {
+  width: 484.2px;
+  height: 25px;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.21px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.footer__third{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.footer__icons{
+  width: 20%;
+}
+
+
+.funded__by{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+
+.funded__images{
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+img.image-2 {
+  width: 75.3px;
+  height: 60px;
+  flex-grow: 0;
+  margin: 0 30px 0 0;
+  object-fit: contain;
+  mix-blend-mode: darken;
+}
+
+img.iconyoutube {
+  width: 42px;
+  height: 30px;
+  flex-grow: 0;
+  object-fit: contain;
+  margin: 0 1em 0 0;
+}
+
+.About-US {
+  width: 84px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: right;
+  color: #5a5b6a;
+  text-transform: uppercase;
+  margin: 0 0 0 2em;
+}
+
+.footer__bottom{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.Copyright-2022 {
+  width: max-content;
+  height: 20px;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #5a5b6a;
+}
+
+.supportpingawebcom {
+  width: 187px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.17px;
+  text-align: right;
+  color: #5a5b6a;
+}

@@ -14,6 +14,7 @@ const BasicForms = React.lazy(() => import('./views/base/forms/BasicForms'));
 // by vinita
 
 const Dashboard = React.lazy(() => import('./components/pages/dashboard/Dashboard'));
+const Report = React.lazy(() => import('./components/pages/report/report'));
 
 // const addProductForms = React.lazy(() => import('./components/pages/product/addProduct'));
 // const updateProductForms = React.lazy(() => import('./components/pages/product/updateProduct'));
@@ -69,6 +70,8 @@ const routes = [
   // by vinita
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/report', name: 'Dashboard', component: Report },
+
   // { path: '/add-product', name: 'Add Product', component: addProductForms },
   { path: '/view-history', name: 'View Patient History', component: ViewHistory },
   

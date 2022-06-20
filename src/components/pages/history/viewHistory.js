@@ -32,7 +32,7 @@ let fileList = [];
 const ViewHistory = () => {
   // const [expert, setExpert] = useState(true);
   //   const expert = window.localStorage.getItem('role') == 'the' ? false : true;
-  const expert = false;
+  const expert = true;
   console.log(expert);
 
   const [isLoading, setisLoading] = useState(false);
