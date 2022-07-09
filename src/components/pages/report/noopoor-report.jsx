@@ -59,8 +59,8 @@ const Report = () => {
     },
     {
       active: false,
-      color: "#ec407a",
-      textColor: "#19191d",
+      // color: "#ec407a",
+      // textColor: "#19191d",
       heading1: "Sexual",
       heading2: "Health",
       src: sexual,
@@ -75,8 +75,8 @@ const Report = () => {
     },
     {
       active: true,
-      // color: "#ffc107",
-      // textColor: "#19191d",
+      color: "#ffc107",
+      textColor: "#19191d",
       heading1: "Nutrition",
       heading2: "& Diet",
       src: nut,
@@ -215,13 +215,13 @@ const Report = () => {
             Personal health dashboard for active integrated health
           </div>
           <div className="report__user__overview">
-            <span class="Pinga-Patient-ID-01">Pinga Patient ID: 014</span>
+            <span class="Pinga-Patient-ID-01">Pinga Patient ID: 012</span>
             <span class="Phone-8151955277">
               <span class="text-style-1">Phone: </span>
-              +91 9990707176
+              +91 8447109880
             </span>
             <span class="Email-riakapoorsgmailcom">
-              <span class="text-style-1">Email: a.tripathy@psalegal.com </span>
+              <span class="text-style-1">Email: </span>
             </span>
           </div>
           <div class="report__user__details">
@@ -231,21 +231,21 @@ const Report = () => {
                 </div>
               <div className="patient__details">
                 <div className="patient__name">
-                  <div class="Ria-Kapoor">Arya Tripathi</div>
-                  <div class="-yrs-She-Her">35 yrs | She/ Her</div>
+                  <div class="Ria-Kapoor">Noopur Nagpal</div>
+                  <div class="-yrs-She-Her">25 yrs | She/ Her</div>
                 </div>
                 <div className="patient__body__details">
                   <div className="patient__height">
                     <div class="HEIGHT">HEIGHT</div>
-                    <div class="-FT">5.4 FT</div>
+                    <div class="-FT">5.5 FT</div>
                   </div>
                   <div className="patient__weight">
                     <div class="WEIGHT">WEIGHT</div>
-                    <div class="-KG">68 KG</div>
+                    <div class="-KG">47 KG</div>
                   </div>
                   <div className="patient__bmi">
                     <div class="BMI" >BMI</div>
-                    <div class="NORMAL">25.74 (Overweight)</div>
+                    <div class="NORMAL">17.2 (Underweight)</div>
                     <div className="patient__bmi__rank">
                       <div class="Rectangle-99"></div>
                       <div class="Rectangle-99"></div>
@@ -272,10 +272,9 @@ const Report = () => {
                 <span class="Based-on-your-general-health-assessment-we-understand-your-goal-is-to-improve-your-Physical-Health">
                 Based on your general health assessment, we understand your goal is to improve your {" "}
                   <span class="text-style-1">
-                  Physical Health,
-                  Sexual Health & Intimate health and
-                  Mental Health
-
+                  Skin Health,
+                  Nutrition & Body weight management and
+                  Physical Health 
                   </span>
                 </span>
               </div>
@@ -308,7 +307,7 @@ const Report = () => {
             tracking your health progress with Pinga on your personal dashboard.
           </div>
           <div class="Health-Journey-Plan-for-Ria-Kapoor">
-            Health Journey Plan for Arya Tripathi
+            Health Journey Plan for Noopur Nagpal
           </div>
           {steps.map((data, i) => {
             console.log(data);
@@ -375,9 +374,11 @@ const Report = () => {
                 </span>
                 <span class="Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy">
                   <span class="text-style-1">
-                  <b>Arya</b>, kudos at taking your overall health and wellness Pinga assessment. 
-                  Great investment, we make noodles in less than 10 minutes.
-                  <br/><br/>
+                  <b>Noopur</b>, kudos at taking your overall health and wellness Pinga assessment. <br/>
+                  Great investment, we make noodles in less than 10 minutes. <br/><br/>
+
+                  We saw you need help now with your <b>gut health</b>,  from an early age. You have a maternal history of gastro - intestinal concerns. You are currently diagnosed with vitamin and iron deficiency, it may be impacting energy levels and mental health status in your day to day life. You also have been facing sleep issues.
+                  <br/>
                   </span>
                   
                 </span>
@@ -390,14 +391,13 @@ const Report = () => {
               <div className="assessment__desc__one__data">
                 <span class="-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f">
                   <span class="text-style-1">After in depth analysis, </span>
-                  we recorded that you primarily have concerns in 3 dimensions of your health - <b>Mental health, nutrition + healthy lifestyle management, physical health and Sexual and intimate Health. You mentioned a post Covid recovery symptom, which is reduced flexibility and perennial pain in your hip joint. Also, You have noticed increased pigmentation.</b> <br/><br/>
+                  we recorded that you primarily have concerns in 4 dimensions of your health - <b>Mental health, nutrition + healthy lifestyle management, physical health and gut health. </b><br/><br/>
 
-                  Pinga suggests that we must do an in depth special assessment of your Mental health. Highly recommended to take a nutrition consultation and start with a basic plan for healthy body weight management. <b>Underlying vitamin deficiencies and unresolved emotional events aggravates mental and gut health conditions.</b> <br/><br/>
+                  We also suggest an in depth special assessment of your mental health to correlate with possibilities of IBS, Irritable Bowel Syndrome. Highly recommended to take a mental health therapy and nutrition consultation to start with a basic plan for great gut health. Underlying vitamin deficiencies may also aggravate mental and other health conditions.<br/><br/>
 
-                  By the way, did you know?<br/><br/>
+                  As a working professional with some or no physical activity, stress can accumulate more. Give it a breather!<br/><br/>
 
-                  Stress releases cortisol and creates a vicious cycle of hormonal imbalance leading to many conditions including digestive issues, skin issues, hair loss, brain fog and irregular periods<br/><br/>
-
+                  Your <b>family history</b> has a history of blood pressure concerns and diabetes.<br/><br/>
 
                 </span>
               </div>
@@ -405,17 +405,15 @@ const Report = () => {
             <div className="assessment__desc__one">
               <div className="assessment__desc__one__data">
                 <span class="-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f">
-                Don’t worry, here, we are just summarizing your overall health + wellness. You are at the right place now, drop all your worries. We got your back! <br/><br/> 
+                Don’t worry, just summarizing your overall health + wellness. You are at the right place now, drop all your worries. We got your back!  <br/><br/>
 
-                As next steps, your health advisor will suggest awesome Pinga doctors and wellness experts to get you started first with your consultations, specialized assessments, and integrated health solution. <b>However, we highly suggest you also try a mental health assessment with us and a therapy session since we noticed you require help there to improve your symptoms.</b><br/><br/>
+                As next steps, your health advisor will suggest awesome Pinga doctors and wellness experts to get you started first with your consultations, specialized assessments, and integrated health solution.<b> However, we highly suggest you also try a mental health assessment with us and a therapy session since we noticed you require help there to improve your symptoms.</b> <br/><br/>
+                . 
 
-                <b>The hip joint pain and restrictive movement can be taken care of by enough rest and/ or targeted joint flexibility exercises. We will share some exercises</b> and movements with you that will help. <br/><br/>
-
-                <b>Kudos!</b><br/>
-                Glad to know that you do outdoor physical activities, strength training, and regular walking. <br/><br/>
+                <b>Kudos! </b><br/>
+                So good to know that you are happy with your sexual life and relationship at the moment! <br/><br/>
 
                 P.S. - You’re now a Pinga supergirl. You’ll have the best of care and lasting lifestyle improvements. 
-                <br/><br/>
 
                 </span>
               </div>
@@ -435,7 +433,7 @@ const Report = () => {
                 </span>
                 <span class="Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy">
                   <span class="text-style-1">
-                  <b>Goal:</b> To prioritize and overcome emotional trauma, unresolved issues and achieve a healthy, balanced lifestyle.
+                  <b>Goal:</b> To prioritize and achieve a healthy, balanced lifestyle with good gut health.
                   </span>
                   
                 </span>
@@ -448,10 +446,9 @@ const Report = () => {
               <div className="assessment__desc__one__data">
                 <span class="-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f">
                   <span class="text-style-1"></span>
-                  Arya, your <b>Mental Health assessment</b> shows that you have signs of a somewhat anxious state of mind. Anxiety or anxiousness is different from anxiety disorder. Normal nervousness or anxiety is a normal reaction to stress, which can be beneficial sometimes. Excessive worry or fear is a sign to watch out for. Anxiety disorders can range from panic disorders to specific phobias, separation anxiety, social anxiety, and many more.
+                  Noopur, your <b>Mental Health assessment</b> shows that you have signs of a somewhat overwhelmed and stressed state of mind. <b>Stress and Anxiety Can Aggravate IBS Symptoms. </b><br/><br/>
 
-                  Pinga highly recommends 3-4 therapy sessions to begin with a nutrition consultation to start an active integrated health improvement plan. 
-                  <br/> 
+                  Pinga highly recommends 3-4 therapy sessions to begin with a nutrition consultation to start an active integrated health improvement plan.<br/><br/> 
 
                 </span>
               </div>

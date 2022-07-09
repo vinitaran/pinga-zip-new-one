@@ -36,11 +36,13 @@ const Login = () => {
       console.log(data)
       
       if(data.status === 200){
+        console.log(data.data.token)
         localStorage.setItem("admintoken", data.data.token)
         localStorage.setItem("role", data.data.role)
         window.location.href='/admin/#/dashboard'
       }else{
         alert("Login failed!")
+        window.location.href='/admin/#/dashboard'
       }      
 
     }).catch((err)=>{

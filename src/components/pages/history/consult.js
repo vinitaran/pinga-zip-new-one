@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";  
+
 import {
   CButton,
   CCard,
@@ -34,6 +37,9 @@ const ExpertConsult = () => {
   // const [expert, setExpert] = useState(true);
   //   const expert = window.localStorage.getItem('role') == 'the' ? false : true;
   const expert = true;
+
+  const [startDate, setStartDate] = useState(new Date());
+
 
   const [isLoading, setisLoading] = useState(false);
 
@@ -76,7 +82,7 @@ const ExpertConsult = () => {
           let fileUrl = data.data.data;
           fileUrl = fileUrl.replace("./uploads/image/", "");
           console.log(fileUrl);
-          fileUrl = "https://shreejiinfashion.com/uploads/image/" + fileUrl;
+          fileUrl = "jgj/" + fileUrl;
           fileList.push(fileUrl);
           console.log(fileList);
           if (files.base64.length == fileList.length) {
@@ -302,6 +308,28 @@ const ExpertConsult = () => {
                       />
                     </CCol>
                   </CFormGroup>
+
+                  <CFormGroup row>
+                    <CCol md="4">
+                      <CLabel htmlFor="date-input">
+                        <h6>Next Date</h6>
+                        
+                      </CLabel>
+                    </CCol>
+                    <CCol xs="12" md="8">
+                    <DatePicker
+                      name="next_appointment"
+                      selected={startDate}
+                      value={
+                        inputs.next_appointment ? inputs.next_appointment : dataList.next_appointment
+                      }
+                      onChange={(date:Date) => setStartDate(date)}
+                      id="date-input"
+                    />
+                      
+                    </CCol>
+                  </CFormGroup>
+                  
                 </CForm>
               ) : (
                 ""

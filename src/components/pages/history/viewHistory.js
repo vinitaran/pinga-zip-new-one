@@ -23,7 +23,7 @@ import CIcon from "@coreui/icons-react";
 
 import ReactFileReader from "react-file-reader";
 import {
-  getUserDetails,
+  getConsultDetails,
   submitConsult,
 } from "../../../reduxUtils/services/History";
 import { uploadFileService } from "../../../reduxUtils/services/uploadFile";
@@ -31,8 +31,8 @@ import { uploadFileService } from "../../../reduxUtils/services/uploadFile";
 let fileList = [];
 const ViewHistory = () => {
   // const [expert, setExpert] = useState(true);
-  //   const expert = window.localStorage.getItem('role') == 'the' ? false : true;
-  const expert = true;
+  // const expert = window.localStorage.getItem('role') == 'the' ? false : true;
+  const expert = false;
   console.log(expert);
 
   const [isLoading, setisLoading] = useState(false);
@@ -51,7 +51,7 @@ const ViewHistory = () => {
   };
 
   useEffect(() => {
-    getUserDetails(patientNumber).then((res) => {
+    getConsultDetails(patientNumber).then((res) => {
       setDataList(res.data);
       //   console.log(res.data);
     });
@@ -150,7 +150,7 @@ const ViewHistory = () => {
                     }}
                     color="info"
                   >
-                    Expert Form
+                    Add Expert Advice
                   </CButton>
                 </span> : ""
                 }</h3>
@@ -202,6 +202,8 @@ const ViewHistory = () => {
                 </div>
               </CCard> */}
               {dataList.map((data) => {
+                console.log("report data")
+                console.log(data)
                 const date = new Date(data?.created_at);
                 let d = new Date(Date.parse(date));
                 // this logs
@@ -210,7 +212,25 @@ const ViewHistory = () => {
                 return (
                   <CCard style={{ backgroundColor: "#EBEDEF", padding: "1em" }}>
                     <h5>
-                      Doctor Name: <b>{data?.dr_name}</b> | Date: {d.toLocaleString()}
+                      Doctor Name: <b>{data?.dr_name}</b> | Date: {d.toLocaleString()} |
+                    
+                      <span style={{ float: "right", width:"135px" }}  >
+                        <CButton
+                        size="md"
+                          block
+                          onClick={() => {
+                            localStorage.setItem(
+                              "productViewId",
+                              dataList[0].patient_id
+                            );
+                            window.location.href =
+                              "/admin/#/advisor?consult-id=" + dataList[0].id;
+                          }}
+                          color="info"
+                        >
+                          Make Report
+                        </CButton>
+                      </span>
                     </h5>
                     {/* {data?.created_at.split("T")[0]} */}
                     <hr></hr>
@@ -267,6 +287,9 @@ const ViewHistory = () => {
                           </CLabel>
                         </CCol>
                       </CFormGroup>
+
+                      
+
                     </CForm>
                   </CCard>
                 );

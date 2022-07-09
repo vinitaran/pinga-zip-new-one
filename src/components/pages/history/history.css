@@ -1,0 +1,12 @@
+.health-checkbox{
+    padding:10px;
+    float:left;
+}
+.health-checkbox label{
+    padding: 10px;
+    font-size: 25px;
+}
+.health-checkbox input.largerCheckbox {
+    width: 40px;
+    height: 40px;
+}

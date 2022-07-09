@@ -2,6 +2,7 @@ import React from 'react';
 import ViewHistory from './components/pages/history/viewHistory';
 
 import ExpertConsult from './components/pages/history/consult';
+import AdvisorConsult from './components/pages/history/advisor';
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
 
@@ -76,6 +77,7 @@ const routes = [
   { path: '/view-history', name: 'View Patient History', component: ViewHistory },
   
   { path: '/expert-consult', name: 'Expert Consult', component: ExpertConsult },
+  { path: '/advisor', name: 'Advisor', component: AdvisorConsult },
   // { path: '/list-product', name: 'List Product', component: listProduct },
   
   // { path: '/list-order', name: 'List Order', component: listOrder },

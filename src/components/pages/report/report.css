@@ -34,6 +34,7 @@ p {
 }
 
 .whatsapp__logo {
+  cursor: pointer;
   width: 3em;
   height: 3em;
   border-radius: 15px;
@@ -279,6 +280,7 @@ img.Logo {
   letter-spacing: 0.15px;
   text-align: left;
   color: #5a5b6a;
+  
 }
 
 .patient__bmi__rank {
@@ -666,7 +668,7 @@ img.Logo {
   font-style: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  text-align: left;
+  text-align: justify;
   color: #19191d;
 }
 
@@ -700,7 +702,7 @@ img.Logo {
   width: 70%;
 }
 
-.Dr-Shella-Jamal {
+.Dr-Shehla-Jamal {
   font-size: 21px;
   font-weight: 600;
   font-stretch: normal;
@@ -800,7 +802,7 @@ img.Logo {
   text-transform: uppercase;
 }
 
-.Priyanjali-heres-what-your-doctor-Shella-observed-and-recommended-as-follow-Up-next-steps {
+.Priyanjali-heres-what-your-doctor-Shehla-observed-and-recommended-as-follow-Up-next-steps {
   font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
@@ -931,6 +933,7 @@ img.Logo {
 }
 
 .whatsapp_button {
+  cursor: pointer;
   width: 270px;
   height: 80px;
   padding: 15px 25px 15px 20px;

@@ -11,10 +11,6 @@ import whatsapp from "../../../asset/whatsapp.png";
 import lock from "../../../asset/lock.png";
 import mental from "../../../asset/mental.png";
 import sexual from "../../../asset/sexual.png";
-import Namrata_sign from "../../../asset/namrata-sign.jpeg";
-import Namrata from "../../../asset/namrata.jpeg";
-import Ishita from "../../../asset/ishita.jpeg";
-
 
 import ladyicon from "../../../asset/ladyicon.png";
 import skin from "../../../asset/skin.png";
@@ -26,7 +22,7 @@ import tick from "../../../asset/tick.png";
 import whiteTick from "../../../asset/whiteTick.png";
 import girls from "../../../asset/girls.png";
 import girl2 from "../../../asset/girl2.png";
-import Shehla from "../../../asset/shehla.png";
+import Shehla from "../../../asset/Shehla.png";
 import docnote from "../../../asset/docnote.png";
 import sign from "../../../asset/sign.png";
 import { getUserReport } from "../../../reduxUtils/services/History";
@@ -51,16 +47,16 @@ const Report = () => {
     },
     {
       active: true,
-      color: "#fb8c00",
+      color: "#f9b115",
       textColor: "#19191d",
       heading1: "Physical",
       heading2: "Health",
       src: physical,
     },
     {
-      active: false,
-      color: "#ec407a",
-      textColor: "#19191d",
+      active: true,
+      color: "",
+      textColor: "",
       heading1: "Sexual",
       heading2: "Health",
       src: sexual,
@@ -75,24 +71,24 @@ const Report = () => {
     },
     {
       active: true,
-      // color: "#ffc107",
-      // textColor: "#19191d",
+      color: "",
+      textColor: "",
       heading1: "Nutrition",
       heading2: "& Diet",
       src: nut,
     },
     {
-      active: false,
-      // color: "#5e35b1",
-      // textColor: "#19191d",
+      active: true,
+      color: "",
+      textColor: "",
       heading1: "Chronic",
       heading2: "Illness",
       src: chronic,
     },
     {
-      active: false,
-      color: "",
-      textColor: "",
+      active: true,
+      color: "#f515f9",
+      textColor: "#19191d",
       heading1: "Others",
       heading2: "& more",
       src: others,
@@ -106,7 +102,7 @@ const Report = () => {
           "Pinga’s process to help you become the better version of yourself everyday. Starting with Pinga general health assessment ",
         tick: true,
         heading: "Pinga Profile - free for the first 1000 users",
-        desc: "General Health - assessment",
+        desc: "General Health - with assessment",
         button: false,
         buttonData: "",
         result: "",
@@ -124,7 +120,7 @@ const Report = () => {
       {
         healthDesc:
           "Act on the personalized health solution plan with your Health Advisor",
-        tick: true,
+        tick: false,
         heading: "Specialized Assessment Taken",
         desc: "Take the AI driven Specialized Sexual & Intimate Health assessment",
         button: false,
@@ -134,7 +130,7 @@ const Report = () => {
       {
         tick: false,
         heading: "Consultation Pending",
-        desc: ["Consultation pending. Click below to book your slot with our amazing doctors and experts"],
+        desc: "Consultation pending.  Click below to book your slot with our amazing doctors and experts ",
         button: true,
         buttonData: "TALK TO HEALTH ADVISOR",
         result: "",
@@ -144,32 +140,21 @@ const Report = () => {
 
   const recommendations = [
     {
-      name: "Lifestyle Changes/practices",
+      name: "Lifestyle recommendations",
       desc: [
-        "Catch enough sleep",
-        "Use sunscreen when stepping out",
+        "Eat something high in fiber that includes protein to keep you full and energized. If you start the day out right, you tend to eat better overall and it helps lower your risk of diabetes and improves heart health.",
+        "Not only that, but eating breakfast helps reduce brain fog, so you’ll be ready to go for those morning meetings.",
       ],
     },
     {
       name: "Medical Recommendations",
       desc: [
-        "Peroduo gel LA HS (to apply once daily on active acne at night)",
-        "LITE GLO facewash LA BD ( twice daily)",
-        "AQUASOFT-FC cream LA BD (to moisturize face)",
-        "MOMATE cream LA OD ( once daily on rashes on hands)",
-        "SUNCROS SOFT MATTE finish sunscreen LA as advised",
-        "TUGAIN 5% solution LA HS (2ml/ day)",
-        "Q-SERA hair serum LA OD ",
-        "8X-KT shampoo LA 1-2 times/ week", 
-        "YUGARD under eye serum OD HS ( once daily at night)"
-
+        "“Go dancing or try yoga,” says Moon. “Once you affirm your connection with your own body, you can affirm your connection with your partner’s body.” One survey found that coupled but sexually inactive people were prone to feelings of sadness and felt unattractive. Reclaim your sexual power by finding new ways to move and get comfortable in your body.",
       ],
     },
     {
       name: "Lab Tests",
-      desc: [
-        
-        ],
+      desc: ["Not recommeded for now."],
     },
     {
       name: "General Notes",
@@ -215,13 +200,14 @@ const Report = () => {
             Personal health dashboard for active integrated health
           </div>
           <div className="report__user__overview">
-            <span class="Pinga-Patient-ID-01">Pinga Patient ID: 014</span>
+            <span class="Pinga-Patient-ID-01">Pinga Patient ID: 09</span>
             <span class="Phone-8151955277">
               <span class="text-style-1">Phone: </span>
-              +91 9990707176
+              +91 7506150797
             </span>
             <span class="Email-riakapoorsgmailcom">
-              <span class="text-style-1">Email: a.tripathy@psalegal.com </span>
+              <span class="text-style-1">Email: </span>
+              asmitaj2998@gmail.com
             </span>
           </div>
           <div class="report__user__details">
@@ -231,21 +217,21 @@ const Report = () => {
                 </div>
               <div className="patient__details">
                 <div className="patient__name">
-                  <div class="Ria-Kapoor">Arya Tripathi</div>
-                  <div class="-yrs-She-Her">35 yrs | She/ Her</div>
+                  <div class="Ria-Kapoor">Asmita Jadhav</div>
+                  <div class="-yrs-She-Her">29 yrs | She/ Her</div>
                 </div>
                 <div className="patient__body__details">
                   <div className="patient__height">
                     <div class="HEIGHT">HEIGHT</div>
-                    <div class="-FT">5.4 FT</div>
+                    <div class="-FT">4.11 FT</div>
                   </div>
                   <div className="patient__weight">
                     <div class="WEIGHT">WEIGHT</div>
-                    <div class="-KG">68 KG</div>
+                    <div class="-KG">52 KG</div>
                   </div>
                   <div className="patient__bmi">
                     <div class="BMI" >BMI</div>
-                    <div class="NORMAL">25.74 (Overweight)</div>
+                    <div class="NORMAL">NORMAL</div>
                     <div className="patient__bmi__rank">
                       <div class="Rectangle-99"></div>
                       <div class="Rectangle-99"></div>
@@ -272,10 +258,9 @@ const Report = () => {
                 <span class="Based-on-your-general-health-assessment-we-understand-your-goal-is-to-improve-your-Physical-Health">
                 Based on your general health assessment, we understand your goal is to improve your {" "}
                   <span class="text-style-1">
-                  Physical Health,
-                  Sexual Health & Intimate health and
-                  Mental Health
-
+                  Mental health, 
+                  Physical Health and
+                  Sleep and body’s rest mechanism  
                   </span>
                 </span>
               </div>
@@ -308,7 +293,7 @@ const Report = () => {
             tracking your health progress with Pinga on your personal dashboard.
           </div>
           <div class="Health-Journey-Plan-for-Ria-Kapoor">
-            Health Journey Plan for Arya Tripathi
+            Health Journey Plan for Asmita Jadhav 
           </div>
           {steps.map((data, i) => {
             console.log(data);
@@ -375,11 +360,10 @@ const Report = () => {
                 </span>
                 <span class="Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy">
                   <span class="text-style-1">
-                  <b>Arya</b>, kudos at taking your overall health and wellness Pinga assessment. 
-                  Great investment, we make noodles in less than 10 minutes.
-                  <br/><br/>
+                    
                   </span>
-                  
+                  <b>Asmita</b>, kudos at taking your overall health and wellness Pinga assessment. <br/>
+                  Great investment, we make noodles in less than 10 minutes. 
                 </span>
               </div>
             </div>
@@ -390,32 +374,34 @@ const Report = () => {
               <div className="assessment__desc__one__data">
                 <span class="-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f">
                   <span class="text-style-1">After in depth analysis, </span>
-                  we recorded that you primarily have concerns in 3 dimensions of your health - <b>Mental health, nutrition + healthy lifestyle management, physical health and Sexual and intimate Health. You mentioned a post Covid recovery symptom, which is reduced flexibility and perennial pain in your hip joint. Also, You have noticed increased pigmentation.</b> <br/><br/>
+                  we recorded that you primarily have concerns in 4 dimensions of your health - <b>physical health and fitness, mental health and fitness, sleep issues and nutrition with body weight management.</b><br/><br/>
 
-                  Pinga suggests that we must do an in depth special assessment of your Mental health. Highly recommended to take a nutrition consultation and start with a basic plan for healthy body weight management. <b>Underlying vitamin deficiencies and unresolved emotional events aggravates mental and gut health conditions.</b> <br/><br/>
+                  <i>However we also suggest that we must do an in depth special assessment of your hair loss pattern, since it is happening from a particular zone of your scalp.</i> <br/><br/>
 
-                  By the way, did you know?<br/><br/>
+                  Sometimes, stress induced alopecia or stress induced hair loss can be a reason. Well, we can’t say much until we do a specialized assessment and a dermatology consultation. <br/><br/>
 
-                  Stress releases cortisol and creates a vicious cycle of hormonal imbalance leading to many conditions including digestive issues, skin issues, hair loss, brain fog and irregular periods<br/><br/>
+                  Your common moods in the past one year have been <b>overwhelmed, stressed, lonely and sad.</b> You find it tough to stay motivated and have been feeling <b>chronic fatigue, which makes it tough to keep you motivated</b>. Your personal, professional and social life is getting impacted. You have been having a feeling of <b>doubt in self worth and feeling guilty.</b><br/><br/>
+
+                  <i>By the way, stress releases cortisol and creates a vicious cycle of hormonal imbalance leading to many conditions including digestive issues, skin issues, hair loss, brain fog and irregular periods. </i><br/><br/>
 
 
+                  About your gorgeous skin, you feel that you have <b>been having a concern of chronic acne</b>.<br/><br/> 
+                  
+                  Your <b>family history</b> of conditions is unknown.
                 </span>
               </div>
             </div>
             <div className="assessment__desc__one">
               <div className="assessment__desc__one__data">
                 <span class="-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f">
-                Don’t worry, here, we are just summarizing your overall health + wellness. You are at the right place now, drop all your worries. We got your back! <br/><br/> 
+                Don’t worry, just summarizing your overall health + wellness. You are at the right place now, drop all your worries. We got your back!  <br/><br/>
 
-                As next steps, your health advisor will suggest awesome Pinga doctors and wellness experts to get you started first with your consultations, specialized assessments, and integrated health solution. <b>However, we highly suggest you also try a mental health assessment with us and a therapy session since we noticed you require help there to improve your symptoms.</b><br/><br/>
+                As next steps, your health advisor will suggest awesome Pinga doctors and wellness experts to get you started first with your concerns and match the right solution for you like specialised assessments and consultations with the right doctor, wellness expert and help you reach your goals. However, we highly suggest you also try a mental health assessment with us and a therapy session since we noticed you require help there to improve your symptoms. <br/><br/>
 
-                <b>The hip joint pain and restrictive movement can be taken care of by enough rest and/ or targeted joint flexibility exercises. We will share some exercises</b> and movements with you that will help. <br/><br/>
-
-                <b>Kudos!</b><br/>
-                Glad to know that you do outdoor physical activities, strength training, and regular walking. <br/><br/>
+                <b>Kudos!</b> <br/>
+                So good to know that you are happy with your sexual life at the moment! 
 
                 P.S. - You’re now a Pinga supergirl. You’ll have the best of care and lasting lifestyle improvements. 
-                <br/><br/>
 
                 </span>
               </div>
@@ -424,229 +410,37 @@ const Report = () => {
               </div>
             </div>
           </div>
-          <div class="assessment__card">
-            <div className="health__assessment__heading">
-              <div className="assessment__image">
-                <img src={physical} class="Group" />
-              </div>
-              <div className="assessment__heading">
-                <span class="sexual-intimate-health-special-assessment">
-                Specialised assessment for Mental Health assessment
-                </span>
-                <span class="Your-Pinga-sexual-and-intimate-health-SA-shows-you-have-irregular-periods-vaginal-burning-and-heavy">
-                  <span class="text-style-1">
-                  <b>Goal:</b> To prioritize and overcome emotional trauma, unresolved issues and achieve a healthy, balanced lifestyle.
-                  </span>
-                  
-                </span>
-              </div>
-            </div>
-            <div className="assessment__desc__one">
-              <div className="assessment__desc__one__image">
-                <img src={girls} class="Group-7882" />
-              </div>
-              <div className="assessment__desc__one__data">
-                <span class="-out-of-10-Pinga-users-like-you-have-shown-similar-symptoms-and-have-completely-recovered-after-a-f">
-                  <span class="text-style-1"></span>
-                  Arya, your <b>Mental Health assessment</b> shows that you have signs of a somewhat anxious state of mind. Anxiety or anxiousness is different from anxiety disorder. Normal nervousness or anxiety is a normal reaction to stress, which can be beneficial sometimes. Excessive worry or fear is a sign to watch out for. Anxiety disorders can range from panic disorders to specific phobias, separation anxiety, social anxiety, and many more.
-
-                  Pinga highly recommends 3-4 therapy sessions to begin with a nutrition consultation to start an active integrated health improvement plan. 
-                  <br/> 
-
-                </span>
-              </div>
-            </div>
-          </div>
           <div className="report__user__overview">
-            <span class="Pinga-Patient-ID-01">Pinga Patient ID: 012</span>
+            <span class="Pinga-Patient-ID-01">Pinga Patient ID: 09</span>
             <span class="Phone-8151955277">
               <span class="text-style-1">Phone: </span>
-              +91 8447109880
+              +91 7506150797
             </span>
             <span class="Email-riakapoorsgmailcom">
               <span class="text-style-1">Email: </span>
-              
+              asmitaj2998@gmail.com
             </span>
           </div>
-
-          
           {/* <div class="doctor">
             <div className="doctor__image">
               <div class="Rectangle-72">
-                <img src={Ishita} class="Rectangle-72" />
+                <img src={Shehla} class="Rectangle-72" />
               </div>
             </div>
             <div className="doctor__details">
-              <span class="Dr-Shehla-Jamal">Ishita Gogia</span>
+              <span class="Dr-Shehla-Jamal">Dr. Shehla Jamal</span>
               <span class="MBBS-DNB-MRCOG-1-fellowship-in-ART-IVF-Germany-Gold-Medalist">
-              
+                MBBS DNB MRCOG (1), fellowship in <br></br> ART IVF (Germany)
+                Gold Medalist
               </span>
             </div>
-            <div className="doctor__specialty">
-              <span class="Specialist"></span>
-              <span class="Gynae">Therapist’s</span>
-            </div>
-          </div>
-          <div class="doctor__notes">
-            <div className="doctor__notes__heading">
-              <div class="doctor__notes__heading__image">
-                <img src={docnote} class="noun-stethoscope-4255828-1" />
-              </div>
-              <div className="doctor__notes__heading__details">
-                <div class="Your-Doctors-notes">Your therapist’s recommendation </div>
-                <div class="Priyanjali-heres-what-your-doctor-Shehla-observed-and-recommended-as-follow-Up-next-steps">
-                
-                </div>
-              </div>
-            </div>
-            <h2>Recommendation from Session 01 </h2>
-                Observation:
-                <ul>
-                  <li>
-                  Puja, you were observed being nervous during the first 10 minutes of the session but responded well to rapport formation. 
-                  </li><li>
-
-                  Self concept observed was extremely affected due to lack of exploration and excessive worry associated with her upcoming nuptials in December. Relationship issues focus on constant conflicts with the partner due to lack of proper communication and possible age gap. 
-                  </li><li>
-
-                  Diminished self confidence due to no nurturance in any other aspects of life other than the current romantic relationship
-                  </li><li>
-                  She was observed being extremely confused about self satisfaction and happiness (does not know what will make her happy)
-                  </li><li>
-                  Puja has a habit of carrying burden instead of speaking at the very moment. Reflection of moral policing with respect to family
-                  </li><li>
-                  Speech was coherent and fluent. Readily wants to work things out and declutter to make better decisions.
-                  </li>
-                </ul>
-
-
-                Improvement plan and recommendation:
-                <ul>
-                  <li>
-                  To do self exploration and activities to boost self confidence
-                  </li>
-                  <li>
-                  Work on personal and professional communication
-                  </li>
-                  <li>
-                  Work on current relationship with her partner by communicating
-                  </li>
-                  <li>
-                  Slowly stop self moral policing and consciously reduce self guilt
-                  </li>
-                  <li>
-                  Work proactively on setting up a routine and Log with Pinga 
-                  </li>
-                  <li>
-                  A list of pros and cons of all relationships (so as to establish confrontational objectives for her sessions)
-                  </li>
-                  <li>
-                  Partially going back to work
-                  </li>
-                  <li>
-                  Spending 10 minutes with yourself everyday and acknowledging your journey so far.
-                  </li>
-                  <li>
-                  Finding an activity that helps you calm down 
-                  </li>
-                </ul> 
-                
-
-                <h2>Recommendation from Session 02: 08/06/2022</h2> 
-                <ul>
-                  <li>
-                  You were more forthcoming this time and opened up about communication issues with family and her partner.
-                  </li>
-                  <li>
-                  You were observed feeling pressured of being married early and not being able to work on your career. 
-                  </li>
-                  <li>
-                  You showed feelings of emotional exhaustion and depleting self confidence to push yourself forward to interact at home and with her partner about your feelings.
-                  </li>
-                  <li>
-                  The daunting feeling due to frequent miscommunications with your partner has caused you to evaluate her relationship in a negative light.
-                  </li>
-                  <li>
-                  Working towards your own happiness seems a far away concept that needs to be worked upon. You focus on pleasing your partner highly as a result of feeling in debt from being provided with support during an accident (traumatic event) were also observed.
-                  </li>
-                </ul> 
-
-
-                Improvement plan and recommendation:
-                <ul>
-                <li>
-                  Going back to work and brainstorming ideas with Ishita, your therapist.
-                </li>
-
-                <li>
-                  Taking a stand for the issues observed in her romantic relationship.
-                </li>
-                <li>
-                  Partially open up with parents about her ongoing unhappiness regarding the marital situation and financial dependence.
-                </li>
-                <li>
-                  Self prioritise emotionally. 
-                </li>
-                </ul>
-
-                <h2>Recommendation from Session 03 and 04: on 15/ 06/ 22 & 28/ 06/ 22</h2>
-
-                <ul>
-                  <li>You were observed being heavily frustrated and helpless about your current situation.</li>
-                  <li>
-                  Repeated attempts to go back to work as informed by you during the session focused on you not being able to meet deadlines and not having faith in your own talent.
-                  </li>
-                  <li>
-                  Your lack of communication with loved ones still continues, you feel constantly burdened, traces of fear of failure with respect to the future (marriage) were also observed
-                  </li>
-                  <li>
-                  Communication with your partner is also somewhat strained due to him being under pressure and not able to cater to you emotionally.
-                  </li>
-                  <li>
-                  Frequent migraine complaints and physical fatigue reported. 
-                  </li>
-                  <li>
-                  Lack of support system and not being able to express in front of the family is taking a heavy toll on your mental health.
-                  </li>
-                </ul>
-
-                Improvement plan and recommendation:
-                <ul>
-                  <li>
-                  Puja, you are highly encouraged to have an open communication with her partner about finances and role expectations post marriage (so that we can plan ahead of fear of failure).
-                  </li>
-                  <li>
-                  Put your foot down with your parents about your requirements and challenges. Express and communicate proactively. Let them know and family members to not guilt you about various situations.
-                  </li>
-                  <li>
-                  Reach out to someone in the family about her condition so as to start building a support system.
-
-                  </li>
-                </ul>
-
-          </div> */}
-
-          <div class="doctor">
-            <div className="doctor__image">
-              <div class="Rectangle-72">
-                <img src={Namrata} class="Rectangle-72" />
-              </div>
-            </div>
-            <div className="doctor__details">
-              <span class="Dr-Shehla-Jamal">Dr. Namrata</span>
-              <span class="MBBS-DNB-MRCOG-1-fellowship-in-ART-IVF-Germany-Gold-Medalist">
-                Degrees: MBBS, MD Dermatology (PGI, Chd), DNB (DVL), FRGUHS (Aesthetic Dermatology)
-              </span>
-            </div>
-
             <div className="doctor__specialty">
               <span class="Specialist">Specialist</span>
               <span class="Gynae">Gynae</span>
             </div>
             <div className="doctor__specialty">
-            
-              <span class="Specialist">KMC reg no. </span>
-              <span class="Gynae">JHK 2014 0000037KTK</span>
+              <span class="Specialist">MCA Reg. No.</span>
+              <span class="Gynae">IN2183123</span>
             </div>
           </div>
           <div class="doctor__notes">
@@ -656,8 +450,9 @@ const Report = () => {
               </div>
               <div className="doctor__notes__heading__details">
                 <div class="Your-Doctors-notes">Your Doctor’s notes</div>
-                <span class="Specialist">Date: 08-07-2022 </span>
-                <div class="Priyanjali-heres-what-your-doctor-Shehla-observed-and-recommended-as-follow-Up-next-steps">Complaint of: Hair fall (female pattern hair loss), PMLE (polymorphous light eruptions), Acne 
+                <div class="Priyanjali-heres-what-your-doctor-Shehla-observed-and-recommended-as-follow-Up-next-steps">
+                  Priyanjali, here’s what your doctor, Shehla observed and
+                  recommended as follow Up & next steps
                 </div>
               </div>
             </div>
@@ -710,16 +505,16 @@ const Report = () => {
               approach. With time you will start to notice the difference and
               feel better. It’s a safe space.
             </span>
-            <img src={Namrata_sign} class="image-19"></img>
+            <img src={sign} class="image-19"></img>
             <span class="Signature">Signature</span>
           </div>
           <div className="brownie__point">
             <span class="Brownie-points-for-your-openness-and-for-your-incredible-willingness-to-share-Next-appointment-sche">
               <span class="text-style-1">Brownie points </span>
               for your openness and for your incredible willingness to share.
-              Next Follow up in 1 month 
+              Next appointment scheduled for - dd/mm and time
             </span>
-          </div>
+          </div> */}
           <div className="extra__details">
             <span class="Below-are-some-lifestyle-management-tools-and-courses-for-you-from-the-Pinga-studio-and-collection">
               Below are some lifestyle management tools and courses for you from
