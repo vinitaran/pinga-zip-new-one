@@ -224,7 +224,7 @@ const ViewHistory = () => {
                               dataList[0].patient_id
                             );
                             window.location.href =
-                              "/admin/#/advisor?consult-id=" + dataList[0].id;
+                              "/admin/#/advisor/patient/" + dataList[0].patient_id;
                           }}
                           color="info"
                         >

@@ -10,3 +10,12 @@
     width: 40px;
     height: 40px;
 }
+.table tr td{
+    border:1px solid #000;
+}
+.table tr td:first-child{
+    width:320px;
+}
+.react-datepicker-popper {
+    z-index: 1000;
+}

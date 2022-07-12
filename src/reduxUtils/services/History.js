@@ -11,23 +11,20 @@ import requestApi from '../../requestApi/requestApi';
 // };
 
 
-export const getUserReport = (doctorConsultId) => {
+export const getUserReport = (reportId) => {
   return requestApi({
     url: `/report/filter`,
     method: 'POST',
     data: {
-      "doctor_consult_id": doctorConsultId
+      "report_id": reportId
     }
   });
 };
 
-export const getUserDetails = (patientNumber) => {
+export const getUserDetails = (patientId) => {
   return requestApi({
-    url: `/consult/filter`,
-    method: 'POST',
-    data: {
-      "patient_mobile": patientNumber
-    }
+    url: `/user/${patientId}/read-single-by-admin/`,
+    method: 'GET'
   });
 };
 
@@ -44,6 +41,14 @@ export const getConsultDetails = (patientNumber) => {
 export const submitConsult = (data) => {
   return requestApi({
     url: `/consult`,
+    method: 'POST',
+    data
+  });
+};
+
+export const submitReport = (data) => {
+  return requestApi({
+    url: `/report`,
     method: 'POST',
     data
   });
