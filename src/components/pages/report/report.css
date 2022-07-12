@@ -167,7 +167,7 @@ img.Logo {
   display: flex;
   width: 90%;
   align-items: center;
-  border-bottom: 1px solid #5a5b6a;
+  /* border-bottom: 1px solid #5a5b6a; */
 }
 
 .patient__body__details {
@@ -271,7 +271,7 @@ img.Logo {
 }
 
 .NORMAL {
-  height: 18px;
+  /* height: 18px; */
   font-size: 15px;
   font-weight: 600;
   font-stretch: normal;

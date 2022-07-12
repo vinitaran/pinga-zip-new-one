@@ -26,7 +26,7 @@ import CIcon from "@coreui/icons-react";
 
 import ReactFileReader from "react-file-reader";
 import {
-  getUserDetails,
+  getPatientDetails,
   submitConsult,
 } from "../../../reduxUtils/services/History";
 import { uploadFileService } from "../../../reduxUtils/services/uploadFile";
@@ -58,7 +58,7 @@ const ExpertConsult = () => {
   };
 
   useEffect(() => {
-    getUserDetails(patientNumber).then((res) => {
+    getPatientDetails(patientNumber).then((res) => {
       setDataList(res.data);
       //   console.log(res.data);
     });

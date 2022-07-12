@@ -48,6 +48,7 @@ const Report = () => {
     });
   }, []);
 
+  console.log(dataList[0]?.data)
   // health goals color
   let mentalColor=false
   let sexualColor=false
@@ -56,6 +57,8 @@ const Report = () => {
   let physicalColor=false
   let chronicColor=false
   let otherColor=false
+  var healthGoal = ""
+  var i = 1
   dataList[0]?.data.health_goal.map((data)=>{
     data=='mental_health'?mentalColor=true:"";
     data=='sexual_health'?sexualColor=true:"";
@@ -64,7 +67,24 @@ const Report = () => {
     data=='physical_health'?physicalColor=true:"";
     data=='chronic_illness'?chronicColor=true:"";
     data=='others_more'?otherColor=true:"";
+    
+    if(data != null){
+      console.log("manish-data | "+ data)
+      if(dataList[0]?.data.health_goal.length == i){
+        healthGoal = healthGoal + " and " +data
+      }else
+      {
+        healthGoal = healthGoal+data+ ", "
+      }
+    }
+    
+    i++
   })
+  healthGoal = healthGoal?.replaceAll("_"," ")
+  healthGoal = healthGoal?.replaceAll(",  and"," and")
+  healthGoal = healthGoal?.toUpperCase()
+  
+  console.log(dataList[0]?.data.consult_data.consultant_name)
   
   const currentGoals = [
     {
@@ -171,35 +191,19 @@ const Report = () => {
   const recommendations = [
     {
       name: "Lifestyle Changes/practices",
-      desc: [
-        "Catch enough sleep",
-        "Use sunscreen when stepping out",
-      ],
+      desc: HtmlParser(dataList[0]?.data.consult_data.lifestyle),
     },
     {
       name: "Medical Recommendations",
-      desc: [
-        "Peroduo gel LA HS (to apply once daily on active acne at night)",
-        "LITE GLO facewash LA BD ( twice daily)",
-        "AQUASOFT-FC cream LA BD (to moisturize face)",
-        "MOMATE cream LA OD ( once daily on rashes on hands)",
-        "SUNCROS SOFT MATTE finish sunscreen LA as advised",
-        "TUGAIN 5% solution LA HS (2ml/ day)",
-        "Q-SERA hair serum LA OD ",
-        "8X-KT shampoo LA 1-2 times/ week", 
-        "YUGARD under eye serum OD HS ( once daily at night)"
-
-      ],
+      desc: HtmlParser(dataList[0]?.data.consult_data.medical),
     },
     {
       name: "Lab Tests",
-      desc: [
-        
-        ],
+      desc: HtmlParser(dataList[0]?.data.consult_data.lab_test),
     },
     {
       name: "General Notes",
-      desc: ["Not recommeded for now."],
+      desc: HtmlParser(dataList[0]?.data.consult_data.general),
     },
   ];
 
@@ -241,7 +245,7 @@ const Report = () => {
             Personal health dashboard for active integrated health
           </div>
           <div className="report__user__overview">
-            <span class="Pinga-Patient-ID-01">Pinga Patient ID: 014</span>
+            <span class="Pinga-Patient-ID-01">Pinga Patient ID: {dataList[0]?.patient_id}</span>
             <span class="Phone-8151955277">
               <span class="text-style-1">Phone: </span>
               {dataList[0]?.mobile}
@@ -257,7 +261,7 @@ const Report = () => {
                 </div>
               <div className="patient__details">
                 <div className="patient__name">
-                  <div class="Ria-Kapoor">Arya Tripathi</div>
+                  <div class="Ria-Kapoor">{dataList[0]?.name}</div>
                   <div class="-yrs-She-Her">{dataList[0]?.dob} yrs | She/ Her</div>
                 </div>
                 <div className="patient__body__details">
@@ -298,9 +302,7 @@ const Report = () => {
                 <span class="Based-on-your-general-health-assessment-we-understand-your-goal-is-to-improve-your-Physical-Health">
                 Based on your general health assessment, we understand your goal is to improve your {" "}
                   <span class="text-style-1">
-                  Physical Health,
-                  Sexual Health & Intimate health and
-                  Mental Health
+                  {healthGoal}
 
                   </span>
                 </span>
@@ -433,14 +435,14 @@ const Report = () => {
             </span>
           </div>
 
-          {/* <div class="doctor">
+          <div class="doctor">
             <div className="doctor__image">
               <div class="Rectangle-72">
                 <img src={Namrata} class="Rectangle-72" />
               </div>
             </div>
             <div className="doctor__details">
-              <span class="Dr-Shehla-Jamal">Dr. Namrata</span>
+              <span class="Dr-Shehla-Jamal">{dataList[0]?.data.consult_data.consultant_name}</span>
               <span class="MBBS-DNB-MRCOG-1-fellowship-in-ART-IVF-Germany-Gold-Medalist">
                 Degrees: MBBS, MD Dermatology (PGI, Chd), DNB (DVL), FRGUHS (Aesthetic Dermatology)
               </span>
@@ -448,12 +450,12 @@ const Report = () => {
 
             <div className="doctor__specialty">
               <span class="Specialist">Specialist</span>
-              <span class="Gynae">Gynae</span>
+              <span class="Gynae">{dataList[0]?.data.consult_data.specialization}</span>
             </div>
             <div className="doctor__specialty">
             
               <span class="Specialist">KMC reg no. </span>
-              <span class="Gynae">JHK 2014 0000037KTK</span>
+              <span class="Gynae">{dataList[0]?.data.consult_data.reg_no}</span>
             </div>
           </div>
           <div class="doctor__notes">
@@ -463,8 +465,8 @@ const Report = () => {
               </div>
               <div className="doctor__notes__heading__details">
                 <div class="Your-Doctors-notes">Your Doctor’s notes</div>
-                <span class="Specialist">Date: 08-07-2022 </span>
-                <div class="Priyanjali-heres-what-your-doctor-Shehla-observed-and-recommended-as-follow-Up-next-steps">Complaint of: Hair fall (female pattern hair loss), PMLE (polymorphous light eruptions), Acne 
+                <span class="Specialist">Date: {dataList[0]?.data.consult_data.consult_date }</span>
+                <div class="Priyanjali-heres-what-your-doctor-Shehla-observed-and-recommended-as-follow-Up-next-steps"> 
                 </div>
               </div>
             </div>
@@ -497,13 +499,7 @@ const Report = () => {
                           {data.name}
                         </span>
                         <ul>
-                          {data.desc.map((rec) => {
-                            return (
-                              <li class="Eat-something-high-in-fiber-that-includes-protein-to-keep-you-full-and-energized-If-you-start-the-d">
-                                {rec}
-                              </li>
-                            );
-                          })}
+                          {data.desc}
                         </ul>
                       </div>
                       <div className="doctors__recommendation__points"></div>
@@ -526,7 +522,7 @@ const Report = () => {
               for your openness and for your incredible willingness to share.
               Next Follow up in 1 month 
             </span>
-          </div> */}
+          </div>
           <div className="extra__details">
             <span class="Below-are-some-lifestyle-management-tools-and-courses-for-you-from-the-Pinga-studio-and-collection">
               Below are some lifestyle management tools and courses for you from

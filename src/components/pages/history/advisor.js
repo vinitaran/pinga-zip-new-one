@@ -36,7 +36,7 @@ import CIcon from "@coreui/icons-react";
 
 import ReactFileReader from "react-file-reader";
 import {
-  getUserDetails,
+  getPatientDetails,
   submitReport,
 } from "../../../reduxUtils/services/History";
 import { uploadFileService } from "../../../reduxUtils/services/uploadFile";
@@ -143,7 +143,7 @@ const AdvisorConsult = () => {
   }
 
   useEffect(() => {
-    getUserDetails(patientId).then((res) => {
+    getPatientDetails(patientId).then((res) => {
       setDataList(res.data);
         console.log(res.data);
     });

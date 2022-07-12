@@ -2,7 +2,7 @@ import requestApi from '../../requestApi/requestApi';
 
 export const getUser = (data) => {
   return requestApi({
-    url: `/user/filter/${data}`,
+    url: `/patient/filter/${data}`,
     method: 'GET'
   });
 };

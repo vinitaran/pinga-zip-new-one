@@ -21,9 +21,9 @@ export const getUserReport = (reportId) => {
   });
 };
 
-export const getUserDetails = (patientId) => {
+export const getPatientDetails = (patientId) => {
   return requestApi({
-    url: `/user/${patientId}/read-single-by-admin/`,
+    url: `/patient/${patientId}/read-single-by-admin/`,
     method: 'GET'
   });
 };
